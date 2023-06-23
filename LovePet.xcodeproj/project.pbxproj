@@ -19,6 +19,7 @@
 		0942885D2A45DE8A00EA2D67 /* ‎Pflichtenheft Batch005 2.‎4.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 094288582A45DE8900EA2D67 /* ‎Pflichtenheft Batch005 2.‎4.jpeg */; };
 		0942885E2A45DE8A00EA2D67 /* ‎Pflichtenheft Batch005 2.‎1.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 094288592A45DE8A00EA2D67 /* ‎Pflichtenheft Batch005 2.‎1.jpeg */; };
 		0942885F2A45DE8A00EA2D67 /* ‎Pflichtenheft Batch005 2.‎3.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 0942885A2A45DE8A00EA2D67 /* ‎Pflichtenheft Batch005 2.‎3.jpeg */; };
+		094288622A45E12900EA2D67 /* LovePet.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 094288612A45E12900EA2D67 /* LovePet.jpg */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -54,6 +55,7 @@
 		094288582A45DE8900EA2D67 /* ‎Pflichtenheft Batch005 2.‎4.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "‎Pflichtenheft Batch005 2.‎4.jpeg"; sourceTree = "<group>"; };
 		094288592A45DE8A00EA2D67 /* ‎Pflichtenheft Batch005 2.‎1.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "‎Pflichtenheft Batch005 2.‎1.jpeg"; sourceTree = "<group>"; };
 		0942885A2A45DE8A00EA2D67 /* ‎Pflichtenheft Batch005 2.‎3.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "‎Pflichtenheft Batch005 2.‎3.jpeg"; sourceTree = "<group>"; };
+		094288612A45E12900EA2D67 /* LovePet.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = LovePet.jpg; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -104,6 +106,7 @@
 		094288252A45D93500EA2D67 /* LovePet */ = {
 			isa = PBXGroup;
 			children = (
+				094288632A45E13400EA2D67 /* FigmaSkizze */,
 				094288602A45DE9200EA2D67 /* Pflichtenheft */,
 				094288262A45D93500EA2D67 /* LovePetApp.swift */,
 				094288282A45D93500EA2D67 /* ContentView.swift */,
@@ -148,6 +151,14 @@
 				094288572A45DE8900EA2D67 /* ‎Pflichtenheft Batch005 2.‎5.jpeg */,
 			);
 			path = Pflichtenheft;
+			sourceTree = "<group>";
+		};
+		094288632A45E13400EA2D67 /* FigmaSkizze */ = {
+			isa = PBXGroup;
+			children = (
+				094288612A45E12900EA2D67 /* LovePet.jpg */,
+			);
+			path = FigmaSkizze;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -255,6 +266,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				0942885B2A45DE8A00EA2D67 /* ‎Pflichtenheft Batch005 2.‎2.jpeg in Resources */,
+				094288622A45E12900EA2D67 /* LovePet.jpg in Resources */,
 				0942882E2A45D93600EA2D67 /* Preview Assets.xcassets in Resources */,
 				0942882B2A45D93600EA2D67 /* Assets.xcassets in Resources */,
 				0942885E2A45DE8A00EA2D67 /* ‎Pflichtenheft Batch005 2.‎1.jpeg in Resources */,
