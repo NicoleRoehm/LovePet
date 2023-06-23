@@ -1,0 +1,582 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		094288272A45D93500EA2D67 /* LovePetApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 094288262A45D93500EA2D67 /* LovePetApp.swift */; };
+		094288292A45D93500EA2D67 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 094288282A45D93500EA2D67 /* ContentView.swift */; };
+		0942882B2A45D93600EA2D67 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0942882A2A45D93600EA2D67 /* Assets.xcassets */; };
+		0942882E2A45D93600EA2D67 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0942882D2A45D93600EA2D67 /* Preview Assets.xcassets */; };
+		094288382A45D93600EA2D67 /* LovePetTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 094288372A45D93600EA2D67 /* LovePetTests.swift */; };
+		094288422A45D93600EA2D67 /* LovePetUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 094288412A45D93600EA2D67 /* LovePetUITests.swift */; };
+		094288442A45D93600EA2D67 /* LovePetUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 094288432A45D93600EA2D67 /* LovePetUITestsLaunchTests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		094288342A45D93600EA2D67 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 0942881B2A45D93500EA2D67 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 094288222A45D93500EA2D67;
+			remoteInfo = LovePet;
+		};
+		0942883E2A45D93600EA2D67 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 0942881B2A45D93500EA2D67 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 094288222A45D93500EA2D67;
+			remoteInfo = LovePet;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		094288232A45D93500EA2D67 /* LovePet.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LovePet.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		094288262A45D93500EA2D67 /* LovePetApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LovePetApp.swift; sourceTree = "<group>"; };
+		094288282A45D93500EA2D67 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		0942882A2A45D93600EA2D67 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		0942882D2A45D93600EA2D67 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		094288332A45D93600EA2D67 /* LovePetTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LovePetTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		094288372A45D93600EA2D67 /* LovePetTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LovePetTests.swift; sourceTree = "<group>"; };
+		0942883D2A45D93600EA2D67 /* LovePetUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LovePetUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		094288412A45D93600EA2D67 /* LovePetUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LovePetUITests.swift; sourceTree = "<group>"; };
+		094288432A45D93600EA2D67 /* LovePetUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LovePetUITestsLaunchTests.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		094288202A45D93500EA2D67 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		094288302A45D93600EA2D67 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0942883A2A45D93600EA2D67 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		0942881A2A45D93500EA2D67 = {
+			isa = PBXGroup;
+			children = (
+				094288252A45D93500EA2D67 /* LovePet */,
+				094288362A45D93600EA2D67 /* LovePetTests */,
+				094288402A45D93600EA2D67 /* LovePetUITests */,
+				094288242A45D93500EA2D67 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		094288242A45D93500EA2D67 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				094288232A45D93500EA2D67 /* LovePet.app */,
+				094288332A45D93600EA2D67 /* LovePetTests.xctest */,
+				0942883D2A45D93600EA2D67 /* LovePetUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		094288252A45D93500EA2D67 /* LovePet */ = {
+			isa = PBXGroup;
+			children = (
+				094288262A45D93500EA2D67 /* LovePetApp.swift */,
+				094288282A45D93500EA2D67 /* ContentView.swift */,
+				0942882A2A45D93600EA2D67 /* Assets.xcassets */,
+				0942882C2A45D93600EA2D67 /* Preview Content */,
+			);
+			path = LovePet;
+			sourceTree = "<group>";
+		};
+		0942882C2A45D93600EA2D67 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				0942882D2A45D93600EA2D67 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		094288362A45D93600EA2D67 /* LovePetTests */ = {
+			isa = PBXGroup;
+			children = (
+				094288372A45D93600EA2D67 /* LovePetTests.swift */,
+			);
+			path = LovePetTests;
+			sourceTree = "<group>";
+		};
+		094288402A45D93600EA2D67 /* LovePetUITests */ = {
+			isa = PBXGroup;
+			children = (
+				094288412A45D93600EA2D67 /* LovePetUITests.swift */,
+				094288432A45D93600EA2D67 /* LovePetUITestsLaunchTests.swift */,
+			);
+			path = LovePetUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		094288222A45D93500EA2D67 /* LovePet */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 094288472A45D93600EA2D67 /* Build configuration list for PBXNativeTarget "LovePet" */;
+			buildPhases = (
+				0942881F2A45D93500EA2D67 /* Sources */,
+				094288202A45D93500EA2D67 /* Frameworks */,
+				094288212A45D93500EA2D67 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = LovePet;
+			productName = LovePet;
+			productReference = 094288232A45D93500EA2D67 /* LovePet.app */;
+			productType = "com.apple.product-type.application";
+		};
+		094288322A45D93600EA2D67 /* LovePetTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 0942884A2A45D93600EA2D67 /* Build configuration list for PBXNativeTarget "LovePetTests" */;
+			buildPhases = (
+				0942882F2A45D93600EA2D67 /* Sources */,
+				094288302A45D93600EA2D67 /* Frameworks */,
+				094288312A45D93600EA2D67 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				094288352A45D93600EA2D67 /* PBXTargetDependency */,
+			);
+			name = LovePetTests;
+			productName = LovePetTests;
+			productReference = 094288332A45D93600EA2D67 /* LovePetTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		0942883C2A45D93600EA2D67 /* LovePetUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 0942884D2A45D93600EA2D67 /* Build configuration list for PBXNativeTarget "LovePetUITests" */;
+			buildPhases = (
+				094288392A45D93600EA2D67 /* Sources */,
+				0942883A2A45D93600EA2D67 /* Frameworks */,
+				0942883B2A45D93600EA2D67 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				0942883F2A45D93600EA2D67 /* PBXTargetDependency */,
+			);
+			name = LovePetUITests;
+			productName = LovePetUITests;
+			productReference = 0942883D2A45D93600EA2D67 /* LovePetUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		0942881B2A45D93500EA2D67 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1430;
+				LastUpgradeCheck = 1430;
+				TargetAttributes = {
+					094288222A45D93500EA2D67 = {
+						CreatedOnToolsVersion = 14.3.1;
+					};
+					094288322A45D93600EA2D67 = {
+						CreatedOnToolsVersion = 14.3.1;
+						TestTargetID = 094288222A45D93500EA2D67;
+					};
+					0942883C2A45D93600EA2D67 = {
+						CreatedOnToolsVersion = 14.3.1;
+						TestTargetID = 094288222A45D93500EA2D67;
+					};
+				};
+			};
+			buildConfigurationList = 0942881E2A45D93500EA2D67 /* Build configuration list for PBXProject "LovePet" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 0942881A2A45D93500EA2D67;
+			productRefGroup = 094288242A45D93500EA2D67 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				094288222A45D93500EA2D67 /* LovePet */,
+				094288322A45D93600EA2D67 /* LovePetTests */,
+				0942883C2A45D93600EA2D67 /* LovePetUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		094288212A45D93500EA2D67 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0942882E2A45D93600EA2D67 /* Preview Assets.xcassets in Resources */,
+				0942882B2A45D93600EA2D67 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		094288312A45D93600EA2D67 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0942883B2A45D93600EA2D67 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		0942881F2A45D93500EA2D67 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				094288292A45D93500EA2D67 /* ContentView.swift in Sources */,
+				094288272A45D93500EA2D67 /* LovePetApp.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0942882F2A45D93600EA2D67 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				094288382A45D93600EA2D67 /* LovePetTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		094288392A45D93600EA2D67 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				094288442A45D93600EA2D67 /* LovePetUITestsLaunchTests.swift in Sources */,
+				094288422A45D93600EA2D67 /* LovePetUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		094288352A45D93600EA2D67 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 094288222A45D93500EA2D67 /* LovePet */;
+			targetProxy = 094288342A45D93600EA2D67 /* PBXContainerItemProxy */;
+		};
+		0942883F2A45D93600EA2D67 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 094288222A45D93500EA2D67 /* LovePet */;
+			targetProxy = 0942883E2A45D93600EA2D67 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		094288452A45D93600EA2D67 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		094288462A45D93600EA2D67 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		094288482A45D93600EA2D67 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"LovePet/Preview Content\"";
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "nicolero-hm.LovePet";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		094288492A45D93600EA2D67 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"LovePet/Preview Content\"";
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "nicolero-hm.LovePet";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		0942884B2A45D93600EA2D67 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "nicolero-hm.LovePetTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/LovePet.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/LovePet";
+			};
+			name = Debug;
+		};
+		0942884C2A45D93600EA2D67 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "nicolero-hm.LovePetTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/LovePet.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/LovePet";
+			};
+			name = Release;
+		};
+		0942884E2A45D93600EA2D67 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "nicolero-hm.LovePetUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = LovePet;
+			};
+			name = Debug;
+		};
+		0942884F2A45D93600EA2D67 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "nicolero-hm.LovePetUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = LovePet;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		0942881E2A45D93500EA2D67 /* Build configuration list for PBXProject "LovePet" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				094288452A45D93600EA2D67 /* Debug */,
+				094288462A45D93600EA2D67 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		094288472A45D93600EA2D67 /* Build configuration list for PBXNativeTarget "LovePet" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				094288482A45D93600EA2D67 /* Debug */,
+				094288492A45D93600EA2D67 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		0942884A2A45D93600EA2D67 /* Build configuration list for PBXNativeTarget "LovePetTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0942884B2A45D93600EA2D67 /* Debug */,
+				0942884C2A45D93600EA2D67 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		0942884D2A45D93600EA2D67 /* Build configuration list for PBXNativeTarget "LovePetUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0942884E2A45D93600EA2D67 /* Debug */,
+				0942884F2A45D93600EA2D67 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 0942881B2A45D93500EA2D67 /* Project object */;
+}
