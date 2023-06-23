@@ -14,6 +14,11 @@
 		094288382A45D93600EA2D67 /* LovePetTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 094288372A45D93600EA2D67 /* LovePetTests.swift */; };
 		094288422A45D93600EA2D67 /* LovePetUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 094288412A45D93600EA2D67 /* LovePetUITests.swift */; };
 		094288442A45D93600EA2D67 /* LovePetUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 094288432A45D93600EA2D67 /* LovePetUITestsLaunchTests.swift */; };
+		0942885B2A45DE8A00EA2D67 /* ‎Pflichtenheft Batch005 2.‎2.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 094288562A45DE8900EA2D67 /* ‎Pflichtenheft Batch005 2.‎2.jpeg */; };
+		0942885C2A45DE8A00EA2D67 /* ‎Pflichtenheft Batch005 2.‎5.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 094288572A45DE8900EA2D67 /* ‎Pflichtenheft Batch005 2.‎5.jpeg */; };
+		0942885D2A45DE8A00EA2D67 /* ‎Pflichtenheft Batch005 2.‎4.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 094288582A45DE8900EA2D67 /* ‎Pflichtenheft Batch005 2.‎4.jpeg */; };
+		0942885E2A45DE8A00EA2D67 /* ‎Pflichtenheft Batch005 2.‎1.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 094288592A45DE8A00EA2D67 /* ‎Pflichtenheft Batch005 2.‎1.jpeg */; };
+		0942885F2A45DE8A00EA2D67 /* ‎Pflichtenheft Batch005 2.‎3.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 0942885A2A45DE8A00EA2D67 /* ‎Pflichtenheft Batch005 2.‎3.jpeg */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -44,7 +49,11 @@
 		0942883D2A45D93600EA2D67 /* LovePetUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LovePetUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		094288412A45D93600EA2D67 /* LovePetUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LovePetUITests.swift; sourceTree = "<group>"; };
 		094288432A45D93600EA2D67 /* LovePetUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LovePetUITestsLaunchTests.swift; sourceTree = "<group>"; };
-		094288522A45DC8C00EA2D67 /* Pflichtenheft Batch005.pages */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Pflichtenheft Batch005.pages"; path = "../../Pflichtenheft Batch005.pages"; sourceTree = "<group>"; };
+		094288562A45DE8900EA2D67 /* ‎Pflichtenheft Batch005 2.‎2.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "‎Pflichtenheft Batch005 2.‎2.jpeg"; sourceTree = "<group>"; };
+		094288572A45DE8900EA2D67 /* ‎Pflichtenheft Batch005 2.‎5.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "‎Pflichtenheft Batch005 2.‎5.jpeg"; sourceTree = "<group>"; };
+		094288582A45DE8900EA2D67 /* ‎Pflichtenheft Batch005 2.‎4.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "‎Pflichtenheft Batch005 2.‎4.jpeg"; sourceTree = "<group>"; };
+		094288592A45DE8A00EA2D67 /* ‎Pflichtenheft Batch005 2.‎1.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "‎Pflichtenheft Batch005 2.‎1.jpeg"; sourceTree = "<group>"; };
+		0942885A2A45DE8A00EA2D67 /* ‎Pflichtenheft Batch005 2.‎3.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "‎Pflichtenheft Batch005 2.‎3.jpeg"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -75,7 +84,6 @@
 		0942881A2A45D93500EA2D67 = {
 			isa = PBXGroup;
 			children = (
-				094288522A45DC8C00EA2D67 /* Pflichtenheft Batch005.pages */,
 				094288252A45D93500EA2D67 /* LovePet */,
 				094288362A45D93600EA2D67 /* LovePetTests */,
 				094288402A45D93600EA2D67 /* LovePetUITests */,
@@ -96,6 +104,7 @@
 		094288252A45D93500EA2D67 /* LovePet */ = {
 			isa = PBXGroup;
 			children = (
+				094288602A45DE9200EA2D67 /* Pflichtenheft */,
 				094288262A45D93500EA2D67 /* LovePetApp.swift */,
 				094288282A45D93500EA2D67 /* ContentView.swift */,
 				0942882A2A45D93600EA2D67 /* Assets.xcassets */,
@@ -127,6 +136,18 @@
 				094288432A45D93600EA2D67 /* LovePetUITestsLaunchTests.swift */,
 			);
 			path = LovePetUITests;
+			sourceTree = "<group>";
+		};
+		094288602A45DE9200EA2D67 /* Pflichtenheft */ = {
+			isa = PBXGroup;
+			children = (
+				094288592A45DE8A00EA2D67 /* ‎Pflichtenheft Batch005 2.‎1.jpeg */,
+				094288562A45DE8900EA2D67 /* ‎Pflichtenheft Batch005 2.‎2.jpeg */,
+				0942885A2A45DE8A00EA2D67 /* ‎Pflichtenheft Batch005 2.‎3.jpeg */,
+				094288582A45DE8900EA2D67 /* ‎Pflichtenheft Batch005 2.‎4.jpeg */,
+				094288572A45DE8900EA2D67 /* ‎Pflichtenheft Batch005 2.‎5.jpeg */,
+			);
+			path = Pflichtenheft;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -233,8 +254,13 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0942885B2A45DE8A00EA2D67 /* ‎Pflichtenheft Batch005 2.‎2.jpeg in Resources */,
 				0942882E2A45D93600EA2D67 /* Preview Assets.xcassets in Resources */,
 				0942882B2A45D93600EA2D67 /* Assets.xcassets in Resources */,
+				0942885E2A45DE8A00EA2D67 /* ‎Pflichtenheft Batch005 2.‎1.jpeg in Resources */,
+				0942885C2A45DE8A00EA2D67 /* ‎Pflichtenheft Batch005 2.‎5.jpeg in Resources */,
+				0942885F2A45DE8A00EA2D67 /* ‎Pflichtenheft Batch005 2.‎3.jpeg in Resources */,
+				0942885D2A45DE8A00EA2D67 /* ‎Pflichtenheft Batch005 2.‎4.jpeg in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
