@@ -44,7 +44,7 @@
 		0942883D2A45D93600EA2D67 /* LovePetUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LovePetUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		094288412A45D93600EA2D67 /* LovePetUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LovePetUITests.swift; sourceTree = "<group>"; };
 		094288432A45D93600EA2D67 /* LovePetUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LovePetUITestsLaunchTests.swift; sourceTree = "<group>"; };
-		094288512A45DA9100EA2D67 /* Pflichtenheft Batch005.pages */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Pflichtenheft Batch005.pages"; path = "../../../Pflichtenheft Batch005.pages"; sourceTree = "<group>"; };
+		094288522A45DC8C00EA2D67 /* Pflichtenheft Batch005.pages */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Pflichtenheft Batch005.pages"; path = "../../Pflichtenheft Batch005.pages"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -75,7 +75,7 @@
 		0942881A2A45D93500EA2D67 = {
 			isa = PBXGroup;
 			children = (
-				094288502A45D9D600EA2D67 /* Pflichtenheft */,
+				094288522A45DC8C00EA2D67 /* Pflichtenheft Batch005.pages */,
 				094288252A45D93500EA2D67 /* LovePet */,
 				094288362A45D93600EA2D67 /* LovePetTests */,
 				094288402A45D93600EA2D67 /* LovePetUITests */,
@@ -127,14 +127,6 @@
 				094288432A45D93600EA2D67 /* LovePetUITestsLaunchTests.swift */,
 			);
 			path = LovePetUITests;
-			sourceTree = "<group>";
-		};
-		094288502A45D9D600EA2D67 /* Pflichtenheft */ = {
-			isa = PBXGroup;
-			children = (
-				094288512A45DA9100EA2D67 /* Pflichtenheft Batch005.pages */,
-			);
-			path = Pflichtenheft;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
