@@ -20,6 +20,9 @@
 		0942885E2A45DE8A00EA2D67 /* ‎Pflichtenheft Batch005 2.‎1.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 094288592A45DE8A00EA2D67 /* ‎Pflichtenheft Batch005 2.‎1.jpeg */; };
 		0942885F2A45DE8A00EA2D67 /* ‎Pflichtenheft Batch005 2.‎3.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 0942885A2A45DE8A00EA2D67 /* ‎Pflichtenheft Batch005 2.‎3.jpeg */; };
 		094288622A45E12900EA2D67 /* LovePet.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 094288612A45E12900EA2D67 /* LovePet.jpg */; };
+		094288682A45E37700EA2D67 /* LogInView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 094288672A45E37700EA2D67 /* LogInView.swift */; };
+		0942886A2A45E38E00EA2D67 /* RegistreView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 094288692A45E38E00EA2D67 /* RegistreView.swift */; };
+		0942886D2A45E45700EA2D67 /* FirebaseAuthService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0942886C2A45E45700EA2D67 /* FirebaseAuthService.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -56,6 +59,9 @@
 		094288592A45DE8A00EA2D67 /* ‎Pflichtenheft Batch005 2.‎1.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "‎Pflichtenheft Batch005 2.‎1.jpeg"; sourceTree = "<group>"; };
 		0942885A2A45DE8A00EA2D67 /* ‎Pflichtenheft Batch005 2.‎3.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "‎Pflichtenheft Batch005 2.‎3.jpeg"; sourceTree = "<group>"; };
 		094288612A45E12900EA2D67 /* LovePet.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = LovePet.jpg; sourceTree = "<group>"; };
+		094288672A45E37700EA2D67 /* LogInView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogInView.swift; sourceTree = "<group>"; };
+		094288692A45E38E00EA2D67 /* RegistreView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegistreView.swift; sourceTree = "<group>"; };
+		0942886C2A45E45700EA2D67 /* FirebaseAuthService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirebaseAuthService.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -106,6 +112,10 @@
 		094288252A45D93500EA2D67 /* LovePet */ = {
 			isa = PBXGroup;
 			children = (
+				094288662A45E35300EA2D67 /* Model */,
+				094288652A45E34200EA2D67 /* ViewModel */,
+				094288642A45E33800EA2D67 /* Views */,
+				0942886B2A45E42900EA2D67 /* Service */,
 				094288632A45E13400EA2D67 /* FigmaSkizze */,
 				094288602A45DE9200EA2D67 /* Pflichtenheft */,
 				094288262A45D93500EA2D67 /* LovePetApp.swift */,
@@ -159,6 +169,37 @@
 				094288612A45E12900EA2D67 /* LovePet.jpg */,
 			);
 			path = FigmaSkizze;
+			sourceTree = "<group>";
+		};
+		094288642A45E33800EA2D67 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				094288672A45E37700EA2D67 /* LogInView.swift */,
+				094288692A45E38E00EA2D67 /* RegistreView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		094288652A45E34200EA2D67 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		094288662A45E35300EA2D67 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		0942886B2A45E42900EA2D67 /* Service */ = {
+			isa = PBXGroup;
+			children = (
+				0942886C2A45E45700EA2D67 /* FirebaseAuthService.swift */,
+			);
+			path = Service;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -297,6 +338,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0942886D2A45E45700EA2D67 /* FirebaseAuthService.swift in Sources */,
+				094288682A45E37700EA2D67 /* LogInView.swift in Sources */,
+				0942886A2A45E38E00EA2D67 /* RegistreView.swift in Sources */,
 				094288292A45D93500EA2D67 /* ContentView.swift in Sources */,
 				094288272A45D93500EA2D67 /* LovePetApp.swift in Sources */,
 			);
