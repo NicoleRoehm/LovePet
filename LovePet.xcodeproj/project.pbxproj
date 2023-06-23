@@ -75,6 +75,7 @@
 		0942881A2A45D93500EA2D67 = {
 			isa = PBXGroup;
 			children = (
+				094288502A45D9D600EA2D67 /* Pflichtenheft */,
 				094288252A45D93500EA2D67 /* LovePet */,
 				094288362A45D93600EA2D67 /* LovePetTests */,
 				094288402A45D93600EA2D67 /* LovePetUITests */,
@@ -106,7 +107,6 @@
 		0942882C2A45D93600EA2D67 /* Preview Content */ = {
 			isa = PBXGroup;
 			children = (
-				094288502A45D9D600EA2D67 /* Pflichtenheft */,
 				0942882D2A45D93600EA2D67 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
