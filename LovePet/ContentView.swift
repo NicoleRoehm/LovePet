@@ -8,17 +8,24 @@
 import SwiftUI
 
 struct ContentView: View {
+    @EnvironmentObject var authServices :
+        FirebaseAuthService
+    
     var body: some View {
-        VStack {
-           
-            Text(" Hier ensteht ein neues Projekt :P ")
+        Group{
+            if authServices.user != nil{
+                HomeView()
+            }else{
+                LogInView()
+            }
+        }.onAppear{
+            authServices.listentoAuthState()
         }
-        .padding()
     }
 }
 
 struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
-        ContentView()
+        ContentView().environmentObject(FirebaseAuthService())
     }
 }

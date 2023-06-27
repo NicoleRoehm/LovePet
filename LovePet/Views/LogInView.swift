@@ -2,19 +2,57 @@
 //  LogInView.swift
 //  LovePet
 //
-//  Created by Nicole Röhm on 23.06.23.
+//  Created by Nicole Röhm on 26.06.23.
 //
 
 import SwiftUI
 
 struct LogInView: View {
+    @EnvironmentObject var authService: FirebaseAuthService
+    
+    @State var email: String = ""
+    @State var password: String = ""
+    
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        
+        
+        VStack{
+            
+            Image("logolp")
+                .resizable()
+                .scaledToFit()
+                .frame(width: 200)
+            
+                TextField("Email", text: $email)
+                    .padding()
+                    .textFieldStyle(.roundedBorder)
+                    
+                    
+                SecureField("Password", text: $password)
+                    .padding()
+                    .textFieldStyle(.roundedBorder)
+                
+                
+                Button("SignIn"){
+                    authService.signIn(email: email, password: password)
+                    
+                }.buttonStyle(.borderedProminent)
+            
+                Text("or")
+            
+                Button("SignUp"){
+                    
+                
+                    
+                }.buttonStyle(.bordered)
+            
+            
+        }
     }
 }
 
 struct LogInView_Previews: PreviewProvider {
     static var previews: some View {
-        LogInView()
+        LogInView().environmentObject(FirebaseAuthService())
     }
 }

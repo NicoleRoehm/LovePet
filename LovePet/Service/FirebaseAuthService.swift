@@ -5,21 +5,20 @@
 //  Created by Nicole Röhm on 23.06.23.
 //
 
-// Aus vorigen Projekten entnommen zur impementierung vom Login und Logout für die App
+// Aus vorigen Projekten entnommen zur Implementierung vom Login und Logout für die App
 
 import Foundation
 import FirebaseAuth
 
-class FirebaseAuthService: ObservableObject{
+class FirebaseAuthService : ObservableObject{
     
-    var user: User? {
+    var user : User?{
         didSet{
             objectWillChange.send()
         }
     }
     func listentoAuthState(){
-        Auth.auth().addStateDidChangeListener{ _, user in
-            
+        Auth.auth().addStateDidChangeListener { _, user in
             self.user = user
             
         }
