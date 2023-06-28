@@ -6,12 +6,16 @@
 //
 
 import SwiftUI
+import Firebase
 
 @main
 struct LovePetApp: App {
+    init(){
+        FirebaseApp.configure()
+    }
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            ContentView().environmentObject(FirebaseAuthService())
         }
     }
 }

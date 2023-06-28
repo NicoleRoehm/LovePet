@@ -24,7 +24,7 @@ class FirebaseAuthService : ObservableObject{
         }
     }
     
-    func signUp (email: String, password: String){
+    func signUp(email: String, password: String){
         Auth.auth().createUser(withEmail: email, password: password){ result, error in
             if let error = error{
                 print("User can´t create \(error.localizedDescription)")
@@ -33,7 +33,7 @@ class FirebaseAuthService : ObservableObject{
             
         }
     }
-    func signIn (email: String, password: String){
+    func signIn(email: String, password: String){
         Auth.auth().signIn(withEmail: email, password: password){ result, error in
             if let error = error{
                 print("User can´t LogIn \(error.localizedDescription)")

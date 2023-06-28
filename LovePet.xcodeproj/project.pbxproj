@@ -22,6 +22,7 @@
 		093AC0DC2A4977B200F20678 /* FirebaseStorageCombine-Community in Frameworks */ = {isa = PBXBuildFile; productRef = 093AC0DB2A4977B200F20678 /* FirebaseStorageCombine-Community */; };
 		093AC0E12A49C77300F20678 /* LogInView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 093AC0E02A49C77300F20678 /* LogInView.swift */; };
 		093AC0E32A49D19A00F20678 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 093AC0E22A49D19A00F20678 /* HomeView.swift */; };
+		093AC0E52A4AC48400F20678 /* SplashView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 093AC0E42A4AC48400F20678 /* SplashView.swift */; };
 		094288272A45D93500EA2D67 /* LovePetApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 094288262A45D93500EA2D67 /* LovePetApp.swift */; };
 		094288292A45D93500EA2D67 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 094288282A45D93500EA2D67 /* ContentView.swift */; };
 		0942882B2A45D93600EA2D67 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0942882A2A45D93600EA2D67 /* Assets.xcassets */; };
@@ -30,7 +31,6 @@
 		094288422A45D93600EA2D67 /* LovePetUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 094288412A45D93600EA2D67 /* LovePetUITests.swift */; };
 		094288442A45D93600EA2D67 /* LovePetUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 094288432A45D93600EA2D67 /* LovePetUITestsLaunchTests.swift */; };
 		094288622A45E12900EA2D67 /* LovePet.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 094288612A45E12900EA2D67 /* LovePet.jpg */; };
-		0942886A2A45E38E00EA2D67 /* RegistreView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 094288692A45E38E00EA2D67 /* RegistreView.swift */; };
 		0942886D2A45E45700EA2D67 /* FirebaseAuthService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0942886C2A45E45700EA2D67 /* FirebaseAuthService.swift */; };
 /* End PBXBuildFile section */
 
@@ -56,6 +56,7 @@
 		093AC0DF2A4992F900F20678 /* Pflichtenheft Batch005 3.pages */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Pflichtenheft Batch005 3.pages"; sourceTree = "<group>"; };
 		093AC0E02A49C77300F20678 /* LogInView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogInView.swift; sourceTree = "<group>"; };
 		093AC0E22A49D19A00F20678 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
+		093AC0E42A4AC48400F20678 /* SplashView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashView.swift; sourceTree = "<group>"; };
 		094288232A45D93500EA2D67 /* LovePet.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LovePet.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		094288262A45D93500EA2D67 /* LovePetApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LovePetApp.swift; sourceTree = "<group>"; };
 		094288282A45D93500EA2D67 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -67,7 +68,6 @@
 		094288412A45D93600EA2D67 /* LovePetUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LovePetUITests.swift; sourceTree = "<group>"; };
 		094288432A45D93600EA2D67 /* LovePetUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LovePetUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		094288612A45E12900EA2D67 /* LovePet.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = LovePet.jpg; sourceTree = "<group>"; };
-		094288692A45E38E00EA2D67 /* RegistreView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegistreView.swift; sourceTree = "<group>"; };
 		0942886C2A45E45700EA2D67 /* FirebaseAuthService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirebaseAuthService.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -190,7 +190,7 @@
 		094288642A45E33800EA2D67 /* Views */ = {
 			isa = PBXGroup;
 			children = (
-				094288692A45E38E00EA2D67 /* RegistreView.swift */,
+				093AC0E42A4AC48400F20678 /* SplashView.swift */,
 				093AC0E02A49C77300F20678 /* LogInView.swift */,
 				093AC0E22A49D19A00F20678 /* HomeView.swift */,
 			);
@@ -370,10 +370,10 @@
 			files = (
 				093AC0E12A49C77300F20678 /* LogInView.swift in Sources */,
 				0942886D2A45E45700EA2D67 /* FirebaseAuthService.swift in Sources */,
-				0942886A2A45E38E00EA2D67 /* RegistreView.swift in Sources */,
 				093AC0E32A49D19A00F20678 /* HomeView.swift in Sources */,
 				094288292A45D93500EA2D67 /* ContentView.swift in Sources */,
 				094288272A45D93500EA2D67 /* LovePetApp.swift in Sources */,
+				093AC0E52A4AC48400F20678 /* SplashView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

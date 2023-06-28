@@ -42,7 +42,7 @@ struct LogInView: View {
             
                 Button("SignUp"){
                     
-                
+                    authService.signUp(email: email, password: password)
                     
                 }.buttonStyle(.bordered)
             
