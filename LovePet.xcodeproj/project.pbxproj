@@ -23,6 +23,13 @@
 		093AC0E12A49C77300F20678 /* LogInView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 093AC0E02A49C77300F20678 /* LogInView.swift */; };
 		093AC0E32A49D19A00F20678 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 093AC0E22A49D19A00F20678 /* HomeView.swift */; };
 		093AC0E52A4AC48400F20678 /* SplashView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 093AC0E42A4AC48400F20678 /* SplashView.swift */; };
+		093AC0EC2A4C436300F20678 /* DogApiViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 093AC0EB2A4C436300F20678 /* DogApiViewModel.swift */; };
+		093AC0EE2A4C437200F20678 /* CatApiViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 093AC0ED2A4C437200F20678 /* CatApiViewModel.swift */; };
+		093AC0F02A4C437D00F20678 /* MainViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 093AC0EF2A4C437D00F20678 /* MainViewModel.swift */; };
+		093AC0F22A4C492100F20678 /* Dogs.swift in Sources */ = {isa = PBXBuildFile; fileRef = 093AC0F12A4C492100F20678 /* Dogs.swift */; };
+		093AC0F42A4C492C00F20678 /* Cats.swift in Sources */ = {isa = PBXBuildFile; fileRef = 093AC0F32A4C492C00F20678 /* Cats.swift */; };
+		093AC0F62A4C4DA700F20678 /* DogResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 093AC0F52A4C4DA700F20678 /* DogResponse.swift */; };
+		093AC0F82A4C4EFB00F20678 /* CatResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 093AC0F72A4C4EFB00F20678 /* CatResponse.swift */; };
 		094288272A45D93500EA2D67 /* LovePetApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 094288262A45D93500EA2D67 /* LovePetApp.swift */; };
 		094288292A45D93500EA2D67 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 094288282A45D93500EA2D67 /* ContentView.swift */; };
 		0942882B2A45D93600EA2D67 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0942882A2A45D93600EA2D67 /* Assets.xcassets */; };
@@ -57,6 +64,13 @@
 		093AC0E02A49C77300F20678 /* LogInView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogInView.swift; sourceTree = "<group>"; };
 		093AC0E22A49D19A00F20678 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
 		093AC0E42A4AC48400F20678 /* SplashView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashView.swift; sourceTree = "<group>"; };
+		093AC0EB2A4C436300F20678 /* DogApiViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DogApiViewModel.swift; sourceTree = "<group>"; };
+		093AC0ED2A4C437200F20678 /* CatApiViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CatApiViewModel.swift; sourceTree = "<group>"; };
+		093AC0EF2A4C437D00F20678 /* MainViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewModel.swift; sourceTree = "<group>"; };
+		093AC0F12A4C492100F20678 /* Dogs.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Dogs.swift; sourceTree = "<group>"; };
+		093AC0F32A4C492C00F20678 /* Cats.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Cats.swift; sourceTree = "<group>"; };
+		093AC0F52A4C4DA700F20678 /* DogResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DogResponse.swift; sourceTree = "<group>"; };
+		093AC0F72A4C4EFB00F20678 /* CatResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CatResponse.swift; sourceTree = "<group>"; };
 		094288232A45D93500EA2D67 /* LovePet.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LovePet.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		094288262A45D93500EA2D67 /* LovePetApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LovePetApp.swift; sourceTree = "<group>"; };
 		094288282A45D93500EA2D67 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -200,6 +214,9 @@
 		094288652A45E34200EA2D67 /* ViewModel */ = {
 			isa = PBXGroup;
 			children = (
+				093AC0EB2A4C436300F20678 /* DogApiViewModel.swift */,
+				093AC0ED2A4C437200F20678 /* CatApiViewModel.swift */,
+				093AC0EF2A4C437D00F20678 /* MainViewModel.swift */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
@@ -207,6 +224,10 @@
 		094288662A45E35300EA2D67 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				093AC0F12A4C492100F20678 /* Dogs.swift */,
+				093AC0F32A4C492C00F20678 /* Cats.swift */,
+				093AC0F52A4C4DA700F20678 /* DogResponse.swift */,
+				093AC0F72A4C4EFB00F20678 /* CatResponse.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -368,12 +389,19 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				093AC0F42A4C492C00F20678 /* Cats.swift in Sources */,
+				093AC0F62A4C4DA700F20678 /* DogResponse.swift in Sources */,
 				093AC0E12A49C77300F20678 /* LogInView.swift in Sources */,
 				0942886D2A45E45700EA2D67 /* FirebaseAuthService.swift in Sources */,
+				093AC0EC2A4C436300F20678 /* DogApiViewModel.swift in Sources */,
 				093AC0E32A49D19A00F20678 /* HomeView.swift in Sources */,
 				094288292A45D93500EA2D67 /* ContentView.swift in Sources */,
 				094288272A45D93500EA2D67 /* LovePetApp.swift in Sources */,
+				093AC0EE2A4C437200F20678 /* CatApiViewModel.swift in Sources */,
 				093AC0E52A4AC48400F20678 /* SplashView.swift in Sources */,
+				093AC0F22A4C492100F20678 /* Dogs.swift in Sources */,
+				093AC0F02A4C437D00F20678 /* MainViewModel.swift in Sources */,
+				093AC0F82A4C4EFB00F20678 /* CatResponse.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
