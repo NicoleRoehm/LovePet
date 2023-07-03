@@ -21,21 +21,19 @@ struct HomeView: View {
                     
                     
                     
-                }.toolbar{
-                    Button{} label: {
-                        Text("Add Pet")
-                        Image(systemName: "plus")
-                    }
                 }
-                
+            }.toolbar{
+                Button{} label: {
+                    Text("Add Pet")
+                    Image(systemName: "plus")
+                }
             }
-            
-            
-            
         }
-        
+                
     }
 }
+        
+    
 
 
 struct HomeView_Previews: PreviewProvider {
