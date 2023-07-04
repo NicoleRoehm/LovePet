@@ -8,30 +8,23 @@
 import SwiftUI
 
 struct HomeView: View {
+    @StateObject var viewModel = DogApiViewModel()
+    @StateObject var viewModel1 = CatApiViewModel()
     @EnvironmentObject var authService :
     FirebaseAuthService
     
     var body: some View {
-        VStack{
-            Text("Hello \(authService.user?.email ?? "User")")
-            
-            Section(header: Text("My Pets")){
+        NavigationStack{
+            VStack{
                 
-                List{
-                    
-                    
-                    
-                }
-            }.toolbar{
-                Button{} label: {
-                    Text("Add Pet")
-                    Image(systemName: "plus")
-                }
+                
             }
         }
-                
     }
 }
+
+                
+
         
     
 

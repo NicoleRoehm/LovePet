@@ -13,10 +13,16 @@ class DogApiViewModel: ObservableObject{
     @Published var dogs = [Dogs]()
     
     func fetchDogs(){
+        func creat_raw_url() -> String{
+            let base_url = URL(string: "https://api.thedogapi.com/v1/breeds")
+            
+            return "\(base_url)" + API_KEY_DOG
+        }
+        let raw_url = creat_raw_url()
+        let encoded_url = raw_url.addingPercentEncoding(withAllowedCharacters: .urlQueryAllowed)
         
-        guard let url = URL(string: "https://api.thedogapi.com/v1/breeds")
-        else{
-            print("Error forming URL")
+        guard encoded_url != nil, let url = URL(string: encoded_url!) else {
+            print("Failed to create the URL from the rate")
             return
         }
         
@@ -38,6 +44,8 @@ class DogApiViewModel: ObservableObject{
                 print(error)
             }
         }
+        
         task.resume()
+        }
     }
-}
+
