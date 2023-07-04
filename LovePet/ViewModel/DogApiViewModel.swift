@@ -16,7 +16,7 @@ class DogApiViewModel: ObservableObject{
         func creat_raw_url() -> String{
             let base_url = URL(string: "https://api.thedogapi.com/v1/breeds")
             
-            return "\(base_url)" + API_KEY_DOG
+            return "\(String(describing: base_url))" + API_KEY_DOG
         }
         let raw_url = creat_raw_url()
         let encoded_url = raw_url.addingPercentEncoding(withAllowedCharacters: .urlQueryAllowed)
@@ -47,5 +47,6 @@ class DogApiViewModel: ObservableObject{
         
         task.resume()
         }
+    
     }
 

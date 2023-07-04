@@ -16,7 +16,7 @@ class CatApiViewModel: ObservableObject{
             
             let base_url = URL(string: "https://api.thecatapi.com/v1/breeds")
         
-                return "\(base_url)" + API_KEY_CAT
+            return "\(String(describing: base_url))" + API_KEY_CAT
             }
         let raw_url = create_raw_url()
         let encoded_url = raw_url.addingPercentEncoding(withAllowedCharacters: .urlQueryAllowed)
@@ -45,4 +45,4 @@ class CatApiViewModel: ObservableObject{
             task.resume()
         }
     }
-}
+
