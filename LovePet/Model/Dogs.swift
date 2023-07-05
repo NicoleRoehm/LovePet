@@ -10,5 +10,7 @@ import Foundation
 struct Dogs: Codable, Hashable{
     
     var id: String
-    var name: String 
+    var name: String
+    
+    static var dummyDog = Dogs(id: "1", name: "Peanut")
 }
