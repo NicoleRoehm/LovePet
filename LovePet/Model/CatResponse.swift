@@ -7,7 +7,7 @@
 
 import Foundation
 
-struct CatResponse: Codable{
+struct CatResponse: Codable, Hashable{
     
     var results: [Cats]
 }

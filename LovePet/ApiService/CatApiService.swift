@@ -6,6 +6,7 @@
 //
 
 import Foundation
+import SwiftUI
 
 class CatApiService: ObservableObject{
     
@@ -13,7 +14,7 @@ class CatApiService: ObservableObject{
     
     func fetchCats(){
         
-            guard let url = URL(string:"https://api.thecatapi.com/v1/breeds&apiKey=\(API_KEY_CAT)")
+            guard let url = URL(string:"https://api.thecatapi.com/v1/breeds")
             else{
               print("Error forming URL")
         

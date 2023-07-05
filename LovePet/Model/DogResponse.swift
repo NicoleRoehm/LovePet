@@ -7,7 +7,7 @@
 
 import Foundation
 
-struct DogResponse: Codable{
+struct DogResponse: Codable, Hashable{
     
     var results: [Dogs]
 }

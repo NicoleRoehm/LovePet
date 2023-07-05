@@ -13,8 +13,23 @@ struct PetView: View {
     
     var body: some View {
         VStack{
-            ScrollView{
-                
+            if (viewModel2.cats.isEmpty){
+                Button(action:{viewModel2.fetchCats()}){
+                    
+                    Text("load Cats")
+                }
+            }
+            else{
+                List{
+                    ForEach(viewModel2.cats, id: \.self){
+                        cat in
+                        VStack(alignment: .leading){
+                            
+                            Text("Dogs")
+                            Text(cat.name)
+                        }
+                    }
+                }
             }
         }
     }
