@@ -8,7 +8,7 @@
 import Foundation
 import SwiftUI
 
-class DogApiViewModel: ObservableObject{
+class DogApiService: ObservableObject{
     
     @Published var dogs = [Dogs]()
     

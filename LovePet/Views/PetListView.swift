@@ -8,8 +8,8 @@
 import SwiftUI
 
 struct PetListView: View {
-    @StateObject var viewModel1 = DogApiViewModel()
-    @StateObject var viewModel2 = CatApiViewModel()
+    @StateObject var viewModel1 = DogApiService()
+    @StateObject var viewModel2 = CatApiService()
     
     var body: some View {
         VStack{

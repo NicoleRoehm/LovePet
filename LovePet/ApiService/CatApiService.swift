@@ -7,26 +7,21 @@
 
 import Foundation
 
-class CatApiViewModel: ObservableObject{
+class CatApiService: ObservableObject{
     
     @Published var cats = [Cats]()
     
     func fetchCats(){
-        func create_raw_url() -> String{
-            
-            let base_url = URL(string: "https://api.thecatapi.com/v1/breeds")
         
-            return "\(String(describing: base_url))" + API_KEY_CAT
+            guard let url = URL(string:"https://api.thecatapi.com/v1/breeds&apiKey=\(API_KEY_CAT)")
+            else{
+              print("Error forming URL")
+        
+                return
             }
-        let raw_url = create_raw_url()
-        let encoded_url = raw_url.addingPercentEncoding(withAllowedCharacters: .urlQueryAllowed)
-        
-        guard encoded_url != nil, let url = URL(string: encoded_url!) else{
-            print("Failed to create a URL from Race")
-            return
-        }
-            let task = URLSession.shared.dataTask(with: url){ data, resCode, error in
-                print(resCode)
+       
+            let task = URLSession.shared.dataTask(with: url) { data, _, error in
+                
                 guard let data = data , error == nil else{
                     print(error as Any)
                     return
@@ -44,5 +39,6 @@ class CatApiViewModel: ObservableObject{
             }
             task.resume()
         }
-    }
+}
+    
 
