@@ -19,9 +19,12 @@ struct HomeView: View {
             
             VStack{
                 
-                
+                    Image(systemName: "person")
+                        .resizable()
+                        .frame(width: 100, height: 100)
+                    
+                    
             }
-            
         }
     }
 }

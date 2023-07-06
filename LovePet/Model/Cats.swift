@@ -9,8 +9,8 @@ import Foundation
 
 struct Cats: Codable, Hashable{
     
-    var id: String
+    
     var name: String
     
-    static var dummyCat = Cats(id: "1", name: "Miezi")
+    static var dummyCat = Cats(name: "Miezi")
 }

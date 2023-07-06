@@ -25,7 +25,7 @@ struct PetView: View {
                         cat in
                         VStack(alignment: .leading){
                             
-                            Text("Dogs")
+                            
                             Text(cat.name)
                         }
                     }

@@ -14,7 +14,7 @@ class CatApiService: ObservableObject{
     
     func fetchCats(){
         
-            guard let url = URL(string:"https://api.thecatapi.com/v1/breeds")
+            guard let url = URL(string:"https://api.thecatapi.com/v1/breeds?api_key=\(API_KEY_CAT)")
             else{
               print("Error forming URL")
         
@@ -28,10 +28,11 @@ class CatApiService: ObservableObject{
                     return
                 }
                 do{
-                    let cats = try JSONDecoder().decode(CatResponse.self, from: data)
+                    let response = try JSONDecoder().decode([Cats].self, from: data)
                     
                     DispatchQueue.main.async {
-                        self.cats = cats.results
+                        response.forEach{cat in self.cats.append(cat)}
+                        // self.cats = cats.results
                         print(self.cats)
                     }
                 }catch{

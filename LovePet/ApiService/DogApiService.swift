@@ -13,30 +13,26 @@ class DogApiService: ObservableObject{
     @Published var dogs = [Dogs]()
     
     func fetchDogs(){
-        func creat_raw_url() -> String{
-            let base_url = URL(string: "https://api.thedogapi.com/v1/breeds")
-            
-            return "\(String(describing: base_url))" + API_KEY_DOG
-        }
-        let raw_url = creat_raw_url()
-        let encoded_url = raw_url.addingPercentEncoding(withAllowedCharacters: .urlQueryAllowed)
-        
-        guard encoded_url != nil, let url = URL(string: encoded_url!) else {
-            print("Failed to create the URL from the rate")
+       
+          guard let url = URL(string: "https://api.thedogapi.com/v1/breeds?api_key=\(API_KEY_DOG)")
+            else{
+              print("Error forming URL")
+          
             return
         }
         
-        let task = URLSession.shared.dataTask(with: url){ data, resCode, error in
-            print(resCode)
+        let task = URLSession.shared.dataTask(with: url){ data, _, error in
+            
             guard let data = data, error == nil else{
                 print (error as Any)
                 return
             }
             do{
-                let dogs = try JSONDecoder().decode(DogResponse.self, from: data)
+                let response = try JSONDecoder().decode([Dogs].self, from: data)
                 
                 DispatchQueue.main.async{
-                    self.dogs = dogs.results
+                    response.forEach{ dog in self.dogs.append(dog)}
+                   // self.dogs = dogs.name
                     print(self.dogs)
                 }
                 
