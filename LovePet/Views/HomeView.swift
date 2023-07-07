@@ -17,14 +17,8 @@ struct HomeView: View {
         
         NavigationStack{
             
-            VStack{
-                List{
-                    Image("pfotenabdruck2")
-                        .resizable()
-                        .frame(width: 100, height: 100)
-                    
-                }
-            }
+            
+            
         }
     }
 }

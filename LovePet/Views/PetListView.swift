@@ -7,7 +7,7 @@
 
 import SwiftUI
 
-struct PetView: View {
+struct PetListView: View {
     @StateObject var viewModel1 = DogApiService()
     @StateObject var viewModel2 = CatApiService()
     
@@ -37,6 +37,6 @@ struct PetView: View {
 
 struct PetListView_Previews: PreviewProvider {
     static var previews: some View {
-        PetView()
+        PetListView()
     }
 }

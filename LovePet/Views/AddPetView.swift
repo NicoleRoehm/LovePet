@@ -10,39 +10,37 @@ import SwiftUI
 struct AddPetView: View {
     @StateObject var viewModel1 = DogApiService()
     @StateObject var viewModel2 = CatApiService()
-    @State var name = ""
-    @State var race = ""
-    @State var age = ""
-    @State var gender = ""
-    @State var description = ""
+    @State var name :String
+    @State var race :String
+    @State var age :String
+    @State var gender :String
+    @State var description :String
     
     var body: some View {
         VStack{
-            
-                TextField("Name", text: $name)
-                    .padding()
-                    .textFieldStyle(.roundedBorder)
-                TextField("Race", text: $race)
-                    .padding()
-                    .textFieldStyle(.roundedBorder)
-                TextField("Age", text: $age)
-                    .padding()
-                    .textFieldStyle(.roundedBorder)
-                TextField("Gender", text: $gender)
-                    .padding()
-                    .textFieldStyle(.roundedBorder)
-                TextField("Description", text:$description)
-                    .padding()
-                    .textFieldStyle(.roundedBorder)
-            
-            
+            Form{
+                Section(header: Text("Name")){
+                    TextField("Name", text: $name)
+                }
+                Section(header: Text("Race")){
+                    TextField("Race", text: $race)
+                    
+                }
+                Section(header: Text("Age")){
+                    TextField("Age", text: $age)}
+                Section(header: Text("Gender")){
+                    TextField("Gender", text: $gender)}
+                Section(header: Text("description")){
+                    TextField("Description", text:$description)}
+                  
+            }
         }
-        
     }
 }
 
+
 struct AddPetView_Previews: PreviewProvider {
     static var previews: some View {
-        AddPetView()
+        AddPetView(name: "", race: "", age: "", gender: "", description: "")
     }
 }
