@@ -2,6 +2,7 @@
 <model type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="21754" systemVersion="22F82" minimumToolsVersion="Automatic" sourceLanguage="Swift" userDefinedModelVersionIdentifier="">
     <entity name="Owner" representedClassName="Owner" syncable="YES" codeGenerationType="class">
         <attribute name="name" optional="YES" attributeType="String"/>
+        <relationship name="holds" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Pets" inverseName="heldby" inverseEntity="Pets"/>
     </entity>
     <entity name="Pets" representedClassName="Pets" syncable="YES" codeGenerationType="class">
         <attribute name="age" optional="YES" attributeType="String"/>
@@ -9,5 +10,6 @@
         <attribute name="gender" optional="YES" attributeType="String"/>
         <attribute name="name" optional="YES" attributeType="String"/>
         <attribute name="race" optional="YES" attributeType="String"/>
+        <relationship name="heldby" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Owner" inverseName="holds" inverseEntity="Owner"/>
     </entity>
 </model>

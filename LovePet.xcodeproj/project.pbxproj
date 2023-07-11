@@ -44,7 +44,6 @@
 		09BE37492A52CBD500D541D5 /* ApiKeyCat.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09BE37482A52CBD500D541D5 /* ApiKeyCat.swift */; };
 		09BE374B2A52CD3900D541D5 /* ChatView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09BE374A2A52CD3900D541D5 /* ChatView.swift */; };
 		09BE374D2A52CD4900D541D5 /* ChatDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09BE374C2A52CD4900D541D5 /* ChatDetailView.swift */; };
-		09F7D3ED2A5C07BE0096D5FE /* PetViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09F7D3EC2A5C07BE0096D5FE /* PetViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -94,7 +93,6 @@
 		09BE37482A52CBD500D541D5 /* ApiKeyCat.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiKeyCat.swift; sourceTree = "<group>"; };
 		09BE374A2A52CD3900D541D5 /* ChatView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatView.swift; sourceTree = "<group>"; };
 		09BE374C2A52CD4900D541D5 /* ChatDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatDetailView.swift; sourceTree = "<group>"; };
-		09F7D3EC2A5C07BE0096D5FE /* PetViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PetViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -233,7 +231,6 @@
 			isa = PBXGroup;
 			children = (
 				093AC0EF2A4C437D00F20678 /* OwnerViewModel.swift */,
-				09F7D3EC2A5C07BE0096D5FE /* PetViewModel.swift */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
@@ -428,7 +425,6 @@
 				093AC0E12A49C77300F20678 /* LogInView.swift in Sources */,
 				0942886D2A45E45700EA2D67 /* FirebaseAuthService.swift in Sources */,
 				09BE374B2A52CD3900D541D5 /* ChatView.swift in Sources */,
-				09F7D3ED2A5C07BE0096D5FE /* PetViewModel.swift in Sources */,
 				093AC0EC2A4C436300F20678 /* DogApiService.swift in Sources */,
 				093AC0E32A49D19A00F20678 /* HomeView.swift in Sources */,
 				094288292A45D93500EA2D67 /* ContentView.swift in Sources */,
