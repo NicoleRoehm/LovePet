@@ -25,6 +25,9 @@ class OwnerViewModel: ObservableObject{
             }
             
         }
+        createOwner(Owner(context: persistentContainer.viewContext), name: "Mike")
+        createOwner(Owner(context: persistentContainer.viewContext), name: "Maax")
+        createOwner(Owner(context: persistentContainer.viewContext), name: "Manuela")
         fetchOwners()
         fetchPets()
         
@@ -57,6 +60,7 @@ class OwnerViewModel: ObservableObject{
         let newOwner = Owner(context: persistentContainer.viewContext)
         
         newOwner.name = name
+        newOwner.id = UUID()
         
         do{
             try persistentContainer.viewContext.save()
@@ -66,7 +70,7 @@ class OwnerViewModel: ObservableObject{
         }
     }
     
-    func createNewPets(_ pets:Pets, age: String, name:String, gender:String, description:String, race: String, descriptions:String ){
+    func createNewPets(_ pets:Pets, age: String, name:String, gender:String, description:String, race: String, descriptions:String, ownerId: UUID ){
         
         let newPet = Pets(context: persistentContainer.viewContext)
         
@@ -75,6 +79,7 @@ class OwnerViewModel: ObservableObject{
         newPet.race = race
         newPet.gender = gender
         newPet.descriptions = descriptions
+        newPet.ownerId = ownerId
         
         do{
             try persistentContainer.viewContext.save()

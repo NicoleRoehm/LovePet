@@ -10,12 +10,15 @@ import SwiftUI
 struct HomeView: View {
     @StateObject var viewModel = DogApiService()
     @StateObject var viewModel1 = CatApiService()
+    @StateObject var viewModel2 = OwnerViewModel()
     @EnvironmentObject var authService :
     FirebaseAuthService
     
     var body: some View {
         
         NavigationStack{
+            
+            
             
             
             
