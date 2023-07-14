@@ -24,21 +24,23 @@ struct HomeView: View {
                     in
                     NavigationLink {
                         
-                        ProfilView()
+                        ProfilDetailView()
                         
                     } label: {
-                        ProfilListView()
-                    }
-                }
-                .toolbar{
-                    ToolbarItem{
-                        Button(
-                            action:{ isDrawerOpen = true},
-                            label:{Label("Add Pet", systemImage: "plus") }
-                        )
+                        ProfilSmallView()
                     }
                 }
                 
+                
+            }
+            .toolbar {
+                ToolbarItem {
+                    Button(
+                        action: { isDrawerOpen.toggle()},
+                        label: {Label ("Add Pet",
+                            systemImage: "plus") }
+                    )
+                }
             }
             .navigationTitle("Profile")
             .sheet(

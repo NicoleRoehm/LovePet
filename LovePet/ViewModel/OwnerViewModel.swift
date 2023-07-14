@@ -11,7 +11,7 @@ import CoreData
 @MainActor
 class OwnerViewModel: ObservableObject{
     
-    private var persistentContainer: NSPersistentContainer
+     let persistentContainer: NSPersistentContainer
     
     @Published var savedOwner: [Owner] = []
     @Published var savedPets : [Pets] = []
@@ -25,9 +25,9 @@ class OwnerViewModel: ObservableObject{
             }
             
         }
-        createOwner(Owner(context: persistentContainer.viewContext), name: "Mike")
-        createOwner(Owner(context: persistentContainer.viewContext), name: "Maax")
-        createOwner(Owner(context: persistentContainer.viewContext), name: "Manuela")
+        createOwner(name: "Mike")
+        createOwner(name: "Maax")
+        createOwner(name: "Manuela")
         fetchOwners()
         fetchPets()
         
@@ -55,7 +55,7 @@ class OwnerViewModel: ObservableObject{
             print("Error fetching: \(error.localizedDescription)")
         }
     }
-    func createOwner(_ owner:Owner, name:String){
+    func createOwner(name:String){
         
         let newOwner = Owner(context: persistentContainer.viewContext)
         
