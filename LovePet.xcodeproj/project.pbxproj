@@ -38,6 +38,8 @@
 		094288442A45D93600EA2D67 /* LovePetUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 094288432A45D93600EA2D67 /* LovePetUITestsLaunchTests.swift */; };
 		094288622A45E12900EA2D67 /* LovePet.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 094288612A45E12900EA2D67 /* LovePet.jpg */; };
 		0942886D2A45E45700EA2D67 /* FirebaseAuthService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0942886C2A45E45700EA2D67 /* FirebaseAuthService.swift */; };
+		095B05F42A613F4D00DE3D2F /* ProfilView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 095B05F32A613F4D00DE3D2F /* ProfilView.swift */; };
+		095B05F62A61406400DE3D2F /* ProfilListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 095B05F52A61406400DE3D2F /* ProfilListView.swift */; };
 		09BE37422A52BB0A00D541D5 /* AddPetView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09BE37412A52BB0A00D541D5 /* AddPetView.swift */; };
 		09BE37442A52BB2200D541D5 /* PetListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09BE37432A52BB2200D541D5 /* PetListView.swift */; };
 		09BE37462A52CB2900D541D5 /* ApiKeyDog.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09BE37452A52CB2900D541D5 /* ApiKeyDog.swift */; };
@@ -87,6 +89,8 @@
 		094288432A45D93600EA2D67 /* LovePetUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LovePetUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		094288612A45E12900EA2D67 /* LovePet.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = LovePet.jpg; sourceTree = "<group>"; };
 		0942886C2A45E45700EA2D67 /* FirebaseAuthService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirebaseAuthService.swift; sourceTree = "<group>"; };
+		095B05F32A613F4D00DE3D2F /* ProfilView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfilView.swift; sourceTree = "<group>"; };
+		095B05F52A61406400DE3D2F /* ProfilListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfilListView.swift; sourceTree = "<group>"; };
 		09BE37412A52BB0A00D541D5 /* AddPetView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddPetView.swift; sourceTree = "<group>"; };
 		09BE37432A52BB2200D541D5 /* PetListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PetListView.swift; sourceTree = "<group>"; };
 		09BE37452A52CB2900D541D5 /* ApiKeyDog.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiKeyDog.swift; sourceTree = "<group>"; };
@@ -223,6 +227,8 @@
 				09BE37432A52BB2200D541D5 /* PetListView.swift */,
 				09BE374A2A52CD3900D541D5 /* ChatView.swift */,
 				09BE374C2A52CD4900D541D5 /* ChatDetailView.swift */,
+				095B05F32A613F4D00DE3D2F /* ProfilView.swift */,
+				095B05F52A61406400DE3D2F /* ProfilListView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -421,6 +427,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				093AC0F42A4C492C00F20678 /* Cats.swift in Sources */,
+				095B05F42A613F4D00DE3D2F /* ProfilView.swift in Sources */,
 				094077DC2A584EC600B00A11 /* OwnerModel.xcdatamodeld in Sources */,
 				093AC0E12A49C77300F20678 /* LogInView.swift in Sources */,
 				0942886D2A45E45700EA2D67 /* FirebaseAuthService.swift in Sources */,
@@ -433,6 +440,7 @@
 				093AC0EE2A4C437200F20678 /* CatApiService.swift in Sources */,
 				093AC0E52A4AC48400F20678 /* SplashView.swift in Sources */,
 				09BE37442A52BB2200D541D5 /* PetListView.swift in Sources */,
+				095B05F62A61406400DE3D2F /* ProfilListView.swift in Sources */,
 				09BE374D2A52CD4900D541D5 /* ChatDetailView.swift in Sources */,
 				093AC0F22A4C492100F20678 /* Dogs.swift in Sources */,
 				093AC0F02A4C437D00F20678 /* OwnerViewModel.swift in Sources */,

@@ -70,7 +70,7 @@ class OwnerViewModel: ObservableObject{
         }
     }
     
-    func createNewPets(_ pets:Pets, age: String, name:String, gender:String, description:String, race: String, descriptions:String, ownerId: UUID ){
+    func createNewPets(age: String, name:String, gender:String, description:String, race: String, descriptions:String, ownerId: UUID ){
         
         let newPet = Pets(context: persistentContainer.viewContext)
         
