@@ -10,28 +10,51 @@ import SwiftUI
 struct PetListView: View {
     @StateObject var viewModel1 = DogApiService()
     @StateObject var viewModel2 = CatApiService()
+    @StateObject var viewModel3 = OwnerViewModel()
     
     var body: some View {
-        VStack{
-            if (viewModel2.cats.isEmpty){
-                Button(action:{viewModel2.fetchCats()}){
-                    
-                    Text("load Cats")
+        HStack{
+            
+                if (viewModel2.cats.isEmpty){
+                    Button(action:{viewModel2.fetchCats()}){
+                        
+                        Text("Cats")
+                        Image(systemName: "")
+                    }
                 }
-            }
-            else{
-                List{
-                    ForEach(viewModel2.cats, id: \.self){
-                        cat in
-                        VStack(alignment: .leading){
-                            
-                            
-                            Text(cat.name)
+                else{
+                    List{
+                        ForEach(viewModel2.cats, id: \.self){
+                            cat in
+                            VStack(alignment: .leading){
+                                
+                                
+                                Text(cat.name)
+                            }
                         }
                     }
                 }
+                if (viewModel1.dogs.isEmpty){
+                    Button(action:{viewModel1.fetchDogs()}){
+                        
+                        Text("Dogs")
+                        Image(systemName: "")
+                    }
+                }
+                else{
+                    List{
+                        ForEach(viewModel2.cats, id: \.self){
+                            cat in
+                            VStack(alignment: .leading){
+                                
+                                
+                                Text(cat.name)
+                            }
+                        }
+                    }
+                    
+                }
             }
-        }
     }
 }
 

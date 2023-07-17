@@ -14,6 +14,8 @@ struct ProfilSmallView: View {
         HStack{
             
             HStack{
+                
+                
                 Image(systemName: "person")
                     .resizable()
                     .aspectRatio( contentMode: .fit)

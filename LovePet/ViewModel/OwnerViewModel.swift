@@ -25,9 +25,9 @@ class OwnerViewModel: ObservableObject{
             }
             
         }
-        createOwner(name: "Mike")
-        createOwner(name: "Maax")
-        createOwner(name: "Manuela")
+        createOwner(name: "Mike",image: "")
+        createOwner(name: "Maax",image: "")
+        createOwner(name: "Manuela",image: "")
         fetchOwners()
         fetchPets()
         
@@ -55,11 +55,12 @@ class OwnerViewModel: ObservableObject{
             print("Error fetching: \(error.localizedDescription)")
         }
     }
-    func createOwner(name:String){
+    func createOwner(name:String, image:String){
         
         let newOwner = Owner(context: persistentContainer.viewContext)
         
         newOwner.name = name
+        newOwner.image = image
         newOwner.id = UUID()
         
         do{

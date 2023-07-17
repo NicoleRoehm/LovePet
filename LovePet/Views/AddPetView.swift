@@ -40,10 +40,15 @@ struct AddPetView: View {
             
                 
                 TextField("Name", text: $name)
+                .padding(.leading)
                 TextField("Race", text: $race)
+                .padding(.leading)
                 TextField("Age", text: $age)
+                .padding(.leading)
                 TextField("Gender", text: $gender)
+                .padding(.leading)
                 TextField("Description", text:$descriptions)
+                .padding(.leading)
                   
                 Button(
                     action: {
