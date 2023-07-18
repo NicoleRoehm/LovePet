@@ -7,6 +7,7 @@
 
 import Foundation
 import CoreData
+import SwiftUI
 
 @MainActor
 class OwnerViewModel: ObservableObject{
@@ -71,7 +72,7 @@ class OwnerViewModel: ObservableObject{
         }
     }
     
-    func createNewPets(age: String, name:String, gender:String, description:String, race: String, descriptions:String, ownerId: UUID ){
+    func createNewPets(age: String, name:String, gender: String, description:String, race: String, descriptions:String, ownerId: UUID ){
         
         let newPet = Pets(context: persistentContainer.viewContext)
         
