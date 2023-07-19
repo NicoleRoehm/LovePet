@@ -12,6 +12,7 @@ struct ContentView: View {
         FirebaseAuthService
     
     var body: some View {
+        
         Group{
             if authServices.user != nil{
                 HomeView()
@@ -21,6 +22,8 @@ struct ContentView: View {
         }.onAppear{
             authServices.listentoAuthState()
         }
+        
+        
     }
 }
 

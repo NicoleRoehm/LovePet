@@ -8,31 +8,32 @@
 import SwiftUI
 
 struct ProfilSmallView: View {
-    @StateObject var viewModel = OwnerViewModel()
+    var owner: Owner
     var body: some View {
-        
         HStack{
-            
-            HStack{
                 
+                Text(owner.name!)
+                    .font(.title)
+                
+                Spacer()
                 
                 Image(systemName: "person")
                     .resizable()
                     .aspectRatio( contentMode: .fit)
                     .frame(width: 30, height: 30)
                     .padding()
-                
-                
-            }
         }
     }
 }
 
 struct ProfilSmallView_Previews: PreviewProvider {
     
+    static var viewModel = OwnerViewModel()
+    static let owners = Owner.self
     
     static var previews: some View {
-        ProfilSmallView()
+        ProfilSmallView(owner: viewModel.savedOwner.first!)
+
         
     }
 }

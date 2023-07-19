@@ -26,6 +26,7 @@ class OwnerViewModel: ObservableObject{
             }
             
         }
+        
         createOwner(name: "Mike",image: "")
         createOwner(name: "Maax",image: "")
         createOwner(name: "Manuela",image: "")
