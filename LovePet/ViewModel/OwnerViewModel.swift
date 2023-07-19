@@ -153,11 +153,11 @@ class OwnerViewModel: ObservableObject{
             print("Error while fetching and filtering: \(error.localizedDescription)")
         }
     }
-    func fetchPetbyName(by name: String){
+    func fetchPetbyRace(by race: String){
         
         let request = NSFetchRequest<Pets>(entityName: String(describing: Pets.self))
-        let namePredicate = NSPredicate(format: "name == %@", name)
-        request.predicate = namePredicate
+        let racePredicate = NSPredicate(format: "race == %@", race)
+        request.predicate = racePredicate
         
         do{
             savedPets = try persistentContainer.viewContext.fetch(request)

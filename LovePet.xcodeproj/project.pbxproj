@@ -42,6 +42,7 @@
 		095B05F62A61406400DE3D2F /* ProfilSmallView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 095B05F52A61406400DE3D2F /* ProfilSmallView.swift */; };
 		099D65C42A65355600FC68BA /* CatListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 099D65C32A65355600FC68BA /* CatListView.swift */; };
 		099D65C62A65412400FC68BA /* DogListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 099D65C52A65412400FC68BA /* DogListView.swift */; };
+		099D65CC2A6806F900FC68BA /* PetsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 099D65CB2A6806F900FC68BA /* PetsView.swift */; };
 		09BE37422A52BB0A00D541D5 /* AddPetView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09BE37412A52BB0A00D541D5 /* AddPetView.swift */; };
 		09BE37442A52BB2200D541D5 /* PetSmallView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09BE37432A52BB2200D541D5 /* PetSmallView.swift */; };
 		09BE37462A52CB2900D541D5 /* ApiKeyDog.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09BE37452A52CB2900D541D5 /* ApiKeyDog.swift */; };
@@ -95,6 +96,7 @@
 		095B05F52A61406400DE3D2F /* ProfilSmallView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfilSmallView.swift; sourceTree = "<group>"; };
 		099D65C32A65355600FC68BA /* CatListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CatListView.swift; sourceTree = "<group>"; };
 		099D65C52A65412400FC68BA /* DogListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DogListView.swift; sourceTree = "<group>"; };
+		099D65CB2A6806F900FC68BA /* PetsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PetsView.swift; sourceTree = "<group>"; };
 		09BE37412A52BB0A00D541D5 /* AddPetView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddPetView.swift; sourceTree = "<group>"; };
 		09BE37432A52BB2200D541D5 /* PetSmallView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PetSmallView.swift; sourceTree = "<group>"; };
 		09BE37452A52CB2900D541D5 /* ApiKeyDog.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiKeyDog.swift; sourceTree = "<group>"; };
@@ -235,6 +237,7 @@
 				095B05F52A61406400DE3D2F /* ProfilSmallView.swift */,
 				099D65C32A65355600FC68BA /* CatListView.swift */,
 				099D65C52A65412400FC68BA /* DogListView.swift */,
+				099D65CB2A6806F900FC68BA /* PetsView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -454,6 +457,7 @@
 				09BE37492A52CBD500D541D5 /* ApiKeyCat.swift in Sources */,
 				099D65C42A65355600FC68BA /* CatListView.swift in Sources */,
 				09BE37422A52BB0A00D541D5 /* AddPetView.swift in Sources */,
+				099D65CC2A6806F900FC68BA /* PetsView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

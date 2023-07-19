@@ -9,8 +9,7 @@ import SwiftUI
 
 
 struct HomeView: View {
-    @StateObject var viewModel = DogApiService()
-    @StateObject var viewModel1 = CatApiService()
+    
     @StateObject var viewModel2 = OwnerViewModel()
     @State private var isDrawerOpen = false
     @EnvironmentObject var authService :
@@ -18,8 +17,7 @@ struct HomeView: View {
     
     var body: some View {
         NavigationStack{
-            
-                VStack{
+            List{
                     ForEach(viewModel2.savedOwner){ owner in
                         NavigationLink{
                             ProfilDetailView()
@@ -27,10 +25,29 @@ struct HomeView: View {
                             ProfilSmallView(owner: owner)
                         }
                     }
+                    
                 }
+                .toolbar {
+                    ToolbarItem {
+                        Button(
+                            action: { isDrawerOpen.toggle()},
+                            label: {Label ("Add Pet",
+                                           systemImage: "plus") }
+                        )
+                    }
+                }
+                .navigationTitle("Profile")
+                .sheet(
+                    isPresented: $isDrawerOpen,
+                    content:{
+                        AddPetView(isDrawerOpen: $isDrawerOpen, name: "", race: "", age: "", gender: "", descriptions: "")
+                    })
+                
             }
+            
+        }
     }
-}
+
 
 struct HomeView_Previews: PreviewProvider {
     

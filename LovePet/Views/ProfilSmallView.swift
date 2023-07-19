@@ -14,6 +14,7 @@ struct ProfilSmallView: View {
                 
                 Text(owner.name!)
                     .font(.title)
+                    .padding()
                 
                 Spacer()
                 
@@ -29,7 +30,7 @@ struct ProfilSmallView: View {
 struct ProfilSmallView_Previews: PreviewProvider {
     
     static var viewModel = OwnerViewModel()
-    static let owners = Owner.self
+    static let owners = Owner.fetchRequest()
     
     static var previews: some View {
         ProfilSmallView(owner: viewModel.savedOwner.first!)
