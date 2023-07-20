@@ -7,7 +7,7 @@
 
 import SwiftUI
 
-struct AddProfilView: View {
+struct AddPetView: View {
     @StateObject var viewModel3 = OwnerViewModel()
     @Binding var isDrawerOpen: Bool
     @State var name :String
@@ -15,6 +15,7 @@ struct AddProfilView: View {
     @State var age :String
     @State var gender :String
     @State var descriptions :String
+    @State var image: String
     
     var body: some View {
         VStack{
@@ -49,7 +50,7 @@ struct AddProfilView: View {
                   
                 Button(
                     action: {
-                        viewModel3.createNewPets(age: age, name: name , gender: gender, description: descriptions, race: race, descriptions: descriptions, ownerId: UUID())
+                        viewModel3.createNewPets(age: age, name: name , gender: gender, race: race, descriptions: descriptions, ownerId: UUID(), image: image)
                             isDrawerOpen = false
                     
                     
@@ -72,8 +73,10 @@ struct AddProfilView: View {
 }
 
 
-struct AddProfilView_Previews: PreviewProvider {
+struct AddPetView_Previews: PreviewProvider {
+    
+    
     static var previews: some View {
-        AddProfilView(isDrawerOpen: .constant(true),name: "", race: "", age: "", gender: "", descriptions: "")
+        AddPetView(isDrawerOpen: .constant(true),name: "", race: "", age: "", gender: "", descriptions: "", image: "")
     }
 }

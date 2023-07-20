@@ -9,7 +9,6 @@ import SwiftUI
 
 struct CatListView: View {
     @StateObject var viewModel2 = CatApiService()
-    @StateObject var viewModel3 = OwnerViewModel()
     var body: some View {
         VStack{
             List{

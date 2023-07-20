@@ -10,6 +10,7 @@
         <attribute name="age" optional="YES" attributeType="String"/>
         <attribute name="descriptions" optional="YES" attributeType="String"/>
         <attribute name="gender" optional="YES" attributeType="String"/>
+        <attribute name="image" optional="YES" attributeType="String"/>
         <attribute name="name" optional="YES" attributeType="String"/>
         <attribute name="ownerId" optional="YES" attributeType="UUID" usesScalarValueType="NO"/>
         <attribute name="race" optional="YES" attributeType="String"/>

@@ -12,6 +12,22 @@ struct ContentView: View {
         FirebaseAuthService
     
     var body: some View {
+        TabView{
+            ChatView()
+               .tabItem{
+                   Label("Chat", systemImage: "text.bubble")
+               }
+            HomeView()
+                .tabItem{
+                    Label("Home", systemImage: "house")
+                }
+                    ProfilDetailView(isDrawerOpen: .constant(true), name: "", race: "", age: "", gender: "", descriptions: "")
+                        .tabItem{
+                            Label("Profil", systemImage: "person")
+                        }
+            
+                
+        }
         
         Group{
             if authServices.user != nil{

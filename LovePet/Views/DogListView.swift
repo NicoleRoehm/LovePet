@@ -9,7 +9,6 @@ import SwiftUI
 
 struct DogListView: View {
     @StateObject var viewModel1 = DogApiService()
-    @StateObject var viewModel3 = OwnerViewModel()
     var body: some View {
         List{
             ForEach(viewModel1.dogs, id: \.self){

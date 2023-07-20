@@ -55,7 +55,7 @@ struct PetSmallView: View {
                     
                     
                 }
-            }.navigationTitle("Pets")
+            }.navigationTitle("Animal breeds")
             
         }
         

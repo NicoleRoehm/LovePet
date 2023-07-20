@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		09326EDF2A696CB40086D60F /* CatAndDogSmallView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09326EDE2A696CB40086D60F /* CatAndDogSmallView.swift */; };
 		093AC0C32A49765100F20678 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 093AC0C22A49765100F20678 /* GoogleService-Info.plist */; };
 		093AC0C62A4977B200F20678 /* FirebaseAuth in Frameworks */ = {isa = PBXBuildFile; productRef = 093AC0C52A4977B200F20678 /* FirebaseAuth */; };
 		093AC0C82A4977B200F20678 /* FirebaseAuthCombine-Community in Frameworks */ = {isa = PBXBuildFile; productRef = 093AC0C72A4977B200F20678 /* FirebaseAuthCombine-Community */; };
@@ -43,7 +44,7 @@
 		099D65C42A65355600FC68BA /* CatListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 099D65C32A65355600FC68BA /* CatListView.swift */; };
 		099D65C62A65412400FC68BA /* DogListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 099D65C52A65412400FC68BA /* DogListView.swift */; };
 		099D65CC2A6806F900FC68BA /* PetsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 099D65CB2A6806F900FC68BA /* PetsView.swift */; };
-		09BE37422A52BB0A00D541D5 /* AddProfilView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09BE37412A52BB0A00D541D5 /* AddProfilView.swift */; };
+		09BE37422A52BB0A00D541D5 /* AddPetView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09BE37412A52BB0A00D541D5 /* AddPetView.swift */; };
 		09BE37442A52BB2200D541D5 /* PetSmallView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09BE37432A52BB2200D541D5 /* PetSmallView.swift */; };
 		09BE37462A52CB2900D541D5 /* ApiKeyDog.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09BE37452A52CB2900D541D5 /* ApiKeyDog.swift */; };
 		09BE37492A52CBD500D541D5 /* ApiKeyCat.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09BE37482A52CBD500D541D5 /* ApiKeyCat.swift */; };
@@ -69,6 +70,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		09326EDE2A696CB40086D60F /* CatAndDogSmallView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CatAndDogSmallView.swift; sourceTree = "<group>"; };
 		093AC0C22A49765100F20678 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		093AC0DF2A4992F900F20678 /* Pflichtenheft Batch005 3.pages */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Pflichtenheft Batch005 3.pages"; sourceTree = "<group>"; };
 		093AC0E02A49C77300F20678 /* LogInView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogInView.swift; sourceTree = "<group>"; };
@@ -97,7 +99,7 @@
 		099D65C32A65355600FC68BA /* CatListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CatListView.swift; sourceTree = "<group>"; };
 		099D65C52A65412400FC68BA /* DogListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DogListView.swift; sourceTree = "<group>"; };
 		099D65CB2A6806F900FC68BA /* PetsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PetsView.swift; sourceTree = "<group>"; };
-		09BE37412A52BB0A00D541D5 /* AddProfilView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddProfilView.swift; sourceTree = "<group>"; };
+		09BE37412A52BB0A00D541D5 /* AddPetView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddPetView.swift; sourceTree = "<group>"; };
 		09BE37432A52BB2200D541D5 /* PetSmallView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PetSmallView.swift; sourceTree = "<group>"; };
 		09BE37452A52CB2900D541D5 /* ApiKeyDog.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiKeyDog.swift; sourceTree = "<group>"; };
 		09BE37482A52CBD500D541D5 /* ApiKeyCat.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiKeyCat.swift; sourceTree = "<group>"; };
@@ -229,7 +231,7 @@
 				093AC0E42A4AC48400F20678 /* SplashView.swift */,
 				093AC0E02A49C77300F20678 /* LogInView.swift */,
 				093AC0E22A49D19A00F20678 /* HomeView.swift */,
-				09BE37412A52BB0A00D541D5 /* AddProfilView.swift */,
+				09BE37412A52BB0A00D541D5 /* AddPetView.swift */,
 				09BE37432A52BB2200D541D5 /* PetSmallView.swift */,
 				09BE374A2A52CD3900D541D5 /* ChatView.swift */,
 				09BE374C2A52CD4900D541D5 /* ChatDetailView.swift */,
@@ -238,6 +240,7 @@
 				099D65C32A65355600FC68BA /* CatListView.swift */,
 				099D65C52A65412400FC68BA /* DogListView.swift */,
 				099D65CB2A6806F900FC68BA /* PetsView.swift */,
+				09326EDE2A696CB40086D60F /* CatAndDogSmallView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -447,6 +450,7 @@
 				094288292A45D93500EA2D67 /* ContentView.swift in Sources */,
 				09BE37462A52CB2900D541D5 /* ApiKeyDog.swift in Sources */,
 				094288272A45D93500EA2D67 /* LovePetApp.swift in Sources */,
+				09326EDF2A696CB40086D60F /* CatAndDogSmallView.swift in Sources */,
 				093AC0EE2A4C437200F20678 /* CatApiService.swift in Sources */,
 				093AC0E52A4AC48400F20678 /* SplashView.swift in Sources */,
 				09BE37442A52BB2200D541D5 /* PetSmallView.swift in Sources */,
@@ -456,7 +460,7 @@
 				093AC0F02A4C437D00F20678 /* OwnerViewModel.swift in Sources */,
 				09BE37492A52CBD500D541D5 /* ApiKeyCat.swift in Sources */,
 				099D65C42A65355600FC68BA /* CatListView.swift in Sources */,
-				09BE37422A52BB0A00D541D5 /* AddProfilView.swift in Sources */,
+				09BE37422A52BB0A00D541D5 /* AddPetView.swift in Sources */,
 				099D65CC2A6806F900FC68BA /* PetsView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

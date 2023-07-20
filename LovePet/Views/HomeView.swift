@@ -19,9 +19,9 @@ struct HomeView: View {
         NavigationStack{
             VStack{
                 List{
-                    ForEach(viewModel2.savedOwner){ owner in
+                    ForEach(viewModel2.savedOwner, id:\ .self){ owner in
                         NavigationLink{
-                            ProfilDetailView()
+                            ProfilDetailView(isDrawerOpen: .constant(true), name: "", race: "", age: "", gender: "", descriptions: "")
                         }label: {
                             ProfilSmallView(owner: owner)
                         }
@@ -31,21 +31,18 @@ struct HomeView: View {
                 .toolbar {
                     ToolbarItem {
                         Button(
-                            action: { isDrawerOpen.toggle()},
-                            label: {Label ("Add Pet",
-                                           systemImage: "plus") }
+                            action: {},
+                            label: {Label ("Menu",
+                                           systemImage: "gearshape") }
                         )
                     }
                 }
             }
                 .navigationTitle("Profile")
-                .sheet(
-                    isPresented: $isDrawerOpen,
-                    content:{
-                        AddProfilView(isDrawerOpen: $isDrawerOpen, name: "", race: "", age: "", gender: "", descriptions: "")
-                    })
+                
                 
             }
+      
             
         }
     }

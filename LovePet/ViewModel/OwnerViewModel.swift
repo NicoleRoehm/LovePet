@@ -26,8 +26,11 @@ class OwnerViewModel: ObservableObject{
             }
             
         }
+        deleteAllPets()
         deleteAllOwners()
-        createOwner(name: "Mike", image: "")
+        createNewPets(age: "2", name: "Pinky", gender: "female", race: "Birma", descriptions: "A loving cuddly cat with a lot of stamina", ownerId: UUID(), image: "katzenbild")
+        createNewPets(age: "3", name: "Bouncy", gender: "male", race: "Dogge", descriptions: "A loving Dog, has a lot of temperament", ownerId: UUID(), image: "hundebild")
+        createOwner(name: "Mike", image: "profilbild1")
         fetchOwners()
         fetchPets()
         
@@ -71,7 +74,7 @@ class OwnerViewModel: ObservableObject{
         }
     }
     
-    func createNewPets(age: String, name:String, gender: String, description:String, race: String, descriptions:String, ownerId: UUID ){
+    func createNewPets(age: String, name:String, gender: String,race: String, descriptions:String, ownerId: UUID, image: String){
         
         let newPet = Pets(context: persistentContainer.viewContext)
         
@@ -81,6 +84,7 @@ class OwnerViewModel: ObservableObject{
         newPet.gender = gender
         newPet.descriptions = descriptions
         newPet.ownerId = ownerId
+        newPet.image = image
         
         do{
             try persistentContainer.viewContext.save()
@@ -142,6 +146,21 @@ class OwnerViewModel: ObservableObject{
     func deleteAllOwners(){
         
         let fetchRequest: NSFetchRequest<NSFetchRequestResult> = NSFetchRequest(entityName: String(describing: Owner.self))
+        let deleteRequest = NSBatchDeleteRequest(fetchRequest: fetchRequest)
+
+        do {
+            try persistentContainer.viewContext.execute(deleteRequest)
+            try persistentContainer.viewContext.save()
+            
+        } catch let error as NSError {
+            // TODO: handle the error
+        }
+        
+    }
+    
+    func deleteAllPets(){
+        
+        let fetchRequest: NSFetchRequest<NSFetchRequestResult> = NSFetchRequest(entityName: String(describing: Pets.self))
         let deleteRequest = NSBatchDeleteRequest(fetchRequest: fetchRequest)
 
         do {
