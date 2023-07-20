@@ -17,7 +17,8 @@ struct HomeView: View {
     
     var body: some View {
         NavigationStack{
-            List{
+            VStack{
+                List{
                     ForEach(viewModel2.savedOwner){ owner in
                         NavigationLink{
                             ProfilDetailView()
@@ -36,11 +37,12 @@ struct HomeView: View {
                         )
                     }
                 }
+            }
                 .navigationTitle("Profile")
                 .sheet(
                     isPresented: $isDrawerOpen,
                     content:{
-                        AddPetView(isDrawerOpen: $isDrawerOpen, name: "", race: "", age: "", gender: "", descriptions: "")
+                        AddProfilView(isDrawerOpen: $isDrawerOpen, name: "", race: "", age: "", gender: "", descriptions: "")
                     })
                 
             }
@@ -52,8 +54,8 @@ struct HomeView: View {
 struct HomeView_Previews: PreviewProvider {
     
     static var previews: some View {
-        HomeView().environmentObject(FirebaseAuthService())
-        
+        //HomeView().environmentObject(FirebaseAuthService())
+        HomeView(viewModel2: OwnerViewModel())
     
     }
 }

@@ -26,10 +26,8 @@ class OwnerViewModel: ObservableObject{
             }
             
         }
-        
-        createOwner(name: "Mike",image: "")
-        createOwner(name: "Maax",image: "")
-        createOwner(name: "Manuela",image: "")
+        deleteAllOwners()
+        createOwner(name: "Mike", image: "")
         fetchOwners()
         fetchPets()
         
@@ -139,6 +137,21 @@ class OwnerViewModel: ObservableObject{
         }catch{
             print("Error with delete: \(error.localizedDescription)")
         }
+    }
+    
+    func deleteAllOwners(){
+        
+        let fetchRequest: NSFetchRequest<NSFetchRequestResult> = NSFetchRequest(entityName: String(describing: Owner.self))
+        let deleteRequest = NSBatchDeleteRequest(fetchRequest: fetchRequest)
+
+        do {
+            try persistentContainer.viewContext.execute(deleteRequest)
+            try persistentContainer.viewContext.save()
+            
+        } catch let error as NSError {
+            // TODO: handle the error
+        }
+        
     }
     
     func fetchOwnersbyName(by name: String){

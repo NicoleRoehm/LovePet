@@ -7,9 +7,7 @@
 
 import SwiftUI
 
-struct AddPetView: View {
-    @StateObject var viewModel1 = DogApiService()
-    @StateObject var viewModel2 = CatApiService()
+struct AddProfilView: View {
     @StateObject var viewModel3 = OwnerViewModel()
     @Binding var isDrawerOpen: Bool
     @State var name :String
@@ -21,7 +19,7 @@ struct AddPetView: View {
     var body: some View {
         VStack{
             HStack{
-                Text("New Pet")
+                Text("NewPet")
                     .font(.title)
                 
                 Spacer()
@@ -38,7 +36,6 @@ struct AddPetView: View {
             }
             .padding()
             
-                
                 TextField("Name", text: $name)
                 .padding(.leading)
                 TextField("Race", text: $race)
@@ -53,7 +50,7 @@ struct AddPetView: View {
                 Button(
                     action: {
                         viewModel3.createNewPets(age: age, name: name , gender: gender, description: descriptions, race: race, descriptions: descriptions, ownerId: UUID())
-                            isDrawerOpen = true
+                            isDrawerOpen = false
                     
                     
                 }, label: {
@@ -75,8 +72,8 @@ struct AddPetView: View {
 }
 
 
-struct AddPetView_Previews: PreviewProvider {
+struct AddProfilView_Previews: PreviewProvider {
     static var previews: some View {
-        AddPetView(isDrawerOpen: .constant(true), name: "", race: "", age: "", gender: "", descriptions: "")
+        AddProfilView(isDrawerOpen: .constant(true),name: "", race: "", age: "", gender: "", descriptions: "")
     }
 }

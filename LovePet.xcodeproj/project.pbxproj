@@ -43,7 +43,7 @@
 		099D65C42A65355600FC68BA /* CatListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 099D65C32A65355600FC68BA /* CatListView.swift */; };
 		099D65C62A65412400FC68BA /* DogListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 099D65C52A65412400FC68BA /* DogListView.swift */; };
 		099D65CC2A6806F900FC68BA /* PetsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 099D65CB2A6806F900FC68BA /* PetsView.swift */; };
-		09BE37422A52BB0A00D541D5 /* AddPetView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09BE37412A52BB0A00D541D5 /* AddPetView.swift */; };
+		09BE37422A52BB0A00D541D5 /* AddProfilView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09BE37412A52BB0A00D541D5 /* AddProfilView.swift */; };
 		09BE37442A52BB2200D541D5 /* PetSmallView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09BE37432A52BB2200D541D5 /* PetSmallView.swift */; };
 		09BE37462A52CB2900D541D5 /* ApiKeyDog.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09BE37452A52CB2900D541D5 /* ApiKeyDog.swift */; };
 		09BE37492A52CBD500D541D5 /* ApiKeyCat.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09BE37482A52CBD500D541D5 /* ApiKeyCat.swift */; };
@@ -97,7 +97,7 @@
 		099D65C32A65355600FC68BA /* CatListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CatListView.swift; sourceTree = "<group>"; };
 		099D65C52A65412400FC68BA /* DogListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DogListView.swift; sourceTree = "<group>"; };
 		099D65CB2A6806F900FC68BA /* PetsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PetsView.swift; sourceTree = "<group>"; };
-		09BE37412A52BB0A00D541D5 /* AddPetView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddPetView.swift; sourceTree = "<group>"; };
+		09BE37412A52BB0A00D541D5 /* AddProfilView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddProfilView.swift; sourceTree = "<group>"; };
 		09BE37432A52BB2200D541D5 /* PetSmallView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PetSmallView.swift; sourceTree = "<group>"; };
 		09BE37452A52CB2900D541D5 /* ApiKeyDog.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiKeyDog.swift; sourceTree = "<group>"; };
 		09BE37482A52CBD500D541D5 /* ApiKeyCat.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiKeyCat.swift; sourceTree = "<group>"; };
@@ -229,7 +229,7 @@
 				093AC0E42A4AC48400F20678 /* SplashView.swift */,
 				093AC0E02A49C77300F20678 /* LogInView.swift */,
 				093AC0E22A49D19A00F20678 /* HomeView.swift */,
-				09BE37412A52BB0A00D541D5 /* AddPetView.swift */,
+				09BE37412A52BB0A00D541D5 /* AddProfilView.swift */,
 				09BE37432A52BB2200D541D5 /* PetSmallView.swift */,
 				09BE374A2A52CD3900D541D5 /* ChatView.swift */,
 				09BE374C2A52CD4900D541D5 /* ChatDetailView.swift */,
@@ -456,7 +456,7 @@
 				093AC0F02A4C437D00F20678 /* OwnerViewModel.swift in Sources */,
 				09BE37492A52CBD500D541D5 /* ApiKeyCat.swift in Sources */,
 				099D65C42A65355600FC68BA /* CatListView.swift in Sources */,
-				09BE37422A52BB0A00D541D5 /* AddPetView.swift in Sources */,
+				09BE37422A52BB0A00D541D5 /* AddProfilView.swift in Sources */,
 				099D65CC2A6806F900FC68BA /* PetsView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
