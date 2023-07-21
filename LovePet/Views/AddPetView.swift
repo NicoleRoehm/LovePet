@@ -9,13 +9,14 @@ import SwiftUI
 
 struct AddPetView: View {
     @StateObject var viewModel3 = OwnerViewModel()
-    @Binding var isDrawerOpen: Bool
-    @State var name :String
-    @State var race :String
-    @State var age :String
-    @State var gender :String
-    @State var descriptions :String
-    @State var image: String
+    @Binding var isDrawerOpen : Bool
+    var owner: Owner
+    @State var name = ""
+    @State var race = ""
+    @State var age = ""
+    @State var gender = ""
+    @State var descriptions = ""
+    @State var image = ""
     
     var body: some View {
         VStack{
@@ -50,7 +51,7 @@ struct AddPetView: View {
                   
                 Button(
                     action: {
-                        viewModel3.createNewPets(age: age, name: name , gender: gender, race: race, descriptions: descriptions, ownerId: UUID(), image: image)
+                        viewModel3.createNewPets(age: age, name: name , gender: gender, race: race, descriptions: descriptions, ownerId: owner.id!, image: image)
                             isDrawerOpen = false
                     
                     
@@ -74,9 +75,9 @@ struct AddPetView: View {
 
 
 struct AddPetView_Previews: PreviewProvider {
-    
-    
+    static var viewModel = OwnerViewModel()
+    static let owners = Owner.fetchRequest()
     static var previews: some View {
-        AddPetView(isDrawerOpen: .constant(true),name: "", race: "", age: "", gender: "", descriptions: "", image: "")
+        AddPetView(isDrawerOpen:.constant(true), owner: viewModel.savedOwner.first!)
     }
 }

@@ -21,7 +21,7 @@ struct HomeView: View {
                 List{
                     ForEach(viewModel2.savedOwner, id:\ .self){ owner in
                         NavigationLink{
-                            ProfilDetailView(isDrawerOpen: .constant(true), name: "", race: "", age: "", gender: "", descriptions: "")
+                            ProfilDetailView(owner: owner)
                         }label: {
                             ProfilSmallView(owner: owner)
                         }

@@ -4,7 +4,7 @@
         <attribute name="id" optional="YES" attributeType="UUID" usesScalarValueType="NO"/>
         <attribute name="image" optional="YES" attributeType="String"/>
         <attribute name="name" optional="YES" attributeType="String"/>
-        <relationship name="holds" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Pets" inverseName="heldby" inverseEntity="Pets"/>
+        <relationship name="holds" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="Pets" inverseName="heldby" inverseEntity="Pets"/>
     </entity>
     <entity name="Pets" representedClassName="Pets" syncable="YES" codeGenerationType="class">
         <attribute name="age" optional="YES" attributeType="String"/>

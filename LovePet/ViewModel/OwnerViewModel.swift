@@ -16,6 +16,7 @@ class OwnerViewModel: ObservableObject{
     
     @Published var savedOwner: [Owner] = []
     @Published var savedPets : [Pets] = []
+    @Published var petsByOwner: [Pets] = []
     
     init(){
         persistentContainer = NSPersistentContainer(name: "OwnerModel")
@@ -26,12 +27,13 @@ class OwnerViewModel: ObservableObject{
             }
             
         }
+        
         deleteAllPets()
         deleteAllOwners()
-        createNewPets(age: "2", name: "Pinky", gender: "female", race: "Birma", descriptions: "A loving cuddly cat with a lot of stamina", ownerId: UUID(), image: "katzenbild")
-        createNewPets(age: "3", name: "Bouncy", gender: "male", race: "Dogge", descriptions: "A loving Dog, has a lot of temperament", ownerId: UUID(), image: "hundebild")
         createOwner(name: "Mike", image: "profilbild1")
         fetchOwners()
+        createNewPets(age: "2", name: "Pinky", gender: "female", race: "Birma", descriptions: "A loving cuddly cat with a lot of stamina", ownerId: savedOwner.first!.id!, image: "katzenbild")
+        createNewPets(age: "3", name: "Bouncy", gender: "male", race: "Dogge", descriptions: "A loving Dog, has a lot of temperament", ownerId: savedOwner.first!.id!, image: "hundebild")
         fetchPets()
         
     }
@@ -197,6 +199,21 @@ class OwnerViewModel: ObservableObject{
         }catch{
             print("Error while fetching and filtering:\(error.localizedDescription)")
         }
+    }
+    
+    func fetchPetsbyOwner(owner: Owner){
+        
+        let request = NSFetchRequest<Pets>(entityName: String(describing: "Pets"))
+        let ownerPredicate = NSPredicate(format: "ownerId == %@", owner.id! as CVarArg)
+        request.predicate = ownerPredicate
+        do{
+            print("fetching Pets")
+            try petsByOwner = persistentContainer.viewContext.fetch(request)
+            
+        }catch{
+            print("Error while fetching and saving: \(error.localizedDescription)")
+        }
+       
     }
     
 }
