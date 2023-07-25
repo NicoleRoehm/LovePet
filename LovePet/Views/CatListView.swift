@@ -12,11 +12,13 @@ struct CatListView: View {
     var body: some View {
         VStack{
             List{
-                ForEach(viewModel2.cats, id: \.self){
-                    cat in
-                    VStack(alignment: .leading){
-                        
-                        Text(cat.name)
+                Section("Cats"){
+                    ForEach(viewModel2.cats, id: \.self){
+                        cat in
+                        VStack(alignment: .leading){
+                            
+                            Text(cat.name)
+                        }
                     }
                 }
             }

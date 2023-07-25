@@ -32,8 +32,9 @@ class OwnerViewModel: ObservableObject{
         deleteAllOwners()
         createOwner(name: "Mike", image: "profilbild1")
         fetchOwners()
-        createNewPets(age: "2", name: "Pinky", gender: "female", race: "Birma", descriptions: "A loving cuddly cat with a lot of stamina", ownerId: savedOwner.first!.id!, image: "katzenbild")
-        createNewPets(age: "3", name: "Bouncy", gender: "male", race: "Dogge", descriptions: "A loving Dog, has a lot of temperament", ownerId: savedOwner.first!.id!, image: "hundebild")
+//        createNewPets(age: "2", name: "Pinky", gender: "female", race: "Birma", descriptions: "A loving cuddly cat with a lot of stamina", ownerId: savedOwner.first!.id!, image: "katzenbild")
+//        createNewPets(age: "3", name: "Bouncy", gender: "male", race: "Dogge", descriptions: "A loving Dog, has a lot of temperament", ownerId: savedOwner.first!.id!, image: "hundebild")
+        fetchPetsbyOwner(ownerid: savedOwner.first!.id! )
         fetchPets()
         
     }
@@ -201,19 +202,25 @@ class OwnerViewModel: ObservableObject{
         }
     }
     
-    func fetchPetsbyOwner(owner: Owner){
+    func fetchPetsbyOwner(ownerid: UUID){
         
         let request = NSFetchRequest<Pets>(entityName: String(describing: "Pets"))
-        let ownerPredicate = NSPredicate(format: "ownerId == %@", owner.id! as CVarArg)
+        let ownerPredicate = NSPredicate(format: "ownerId == %@", ownerid as CVarArg)
         request.predicate = ownerPredicate
         do{
             print("fetching Pets")
-            try petsByOwner = persistentContainer.viewContext.fetch(request)
+           
+                do {
+                    var pets =  try persistentContainer.viewContext.fetch(request)
+                    if !pets.isEmpty {
+                        self.petsByOwner = pets
+                    }
+                    
+                }catch{
+                    print("Error while fetching and saving: \(error.localizedDescription)")
+                }
             
-        }catch{
-            print("Error while fetching and saving: \(error.localizedDescription)")
         }
-       
     }
     
 }

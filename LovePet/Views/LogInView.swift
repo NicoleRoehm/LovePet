@@ -9,9 +9,10 @@ import SwiftUI
 
 struct LogInView: View {
     @EnvironmentObject var authService: FirebaseAuthService
-    
+    @StateObject var viewModel = OwnerViewModel()
     @State var email: String = ""
     @State var password: String = ""
+    @State var name: String = ""
     
     var body: some View {
         
@@ -22,6 +23,11 @@ struct LogInView: View {
                 .resizable()
                 .scaledToFit()
                 .frame(width: 200)
+            
+            TextField("Name", text: $name)
+                .padding()
+                .textFieldStyle(.roundedBorder)
+            
             
                 TextField("Email", text: $email)
                     .padding()

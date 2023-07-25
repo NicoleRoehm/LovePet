@@ -53,7 +53,7 @@ struct AddPetView: View {
                     action: {
                         viewModel3.createNewPets(age: age, name: name , gender: gender, race: race, descriptions: descriptions, ownerId: owner.id!, image: image)
                             isDrawerOpen = false
-                    
+                        viewModel3.fetchPetsbyOwner(ownerid: owner.id!)
                     
                 }, label: {
                     Text("add Pet")

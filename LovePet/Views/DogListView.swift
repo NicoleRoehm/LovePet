@@ -11,11 +11,13 @@ struct DogListView: View {
     @StateObject var viewModel1 = DogApiService()
     var body: some View {
         List{
-            ForEach(viewModel1.dogs, id: \.self){
-                dog in
-                
-                VStack(alignment: .leading){
-                    Text(dog.name)
+            Section("Dogs"){
+                ForEach(viewModel1.dogs, id: \.self){
+                    dog in
+                    
+                    VStack(alignment: .leading){
+                        Text(dog.name)
+                    }
                 }
             }
         }.onAppear{viewModel1.fetchDogs()}

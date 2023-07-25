@@ -27,6 +27,7 @@ struct HomeView: View {
                         }
                     }
                     
+                    
                 }
                 .toolbar {
                     ToolbarItem {
@@ -37,6 +38,14 @@ struct HomeView: View {
                         )
                     }
                 }
+                
+                Button(
+                    action:{authService.signOut()
+                    }, label: {
+                        Text("LogOut")
+                            .padding(15)
+                    }
+                )
             }
                 .navigationTitle("Profile")
                 
@@ -51,8 +60,7 @@ struct HomeView: View {
 struct HomeView_Previews: PreviewProvider {
     
     static var previews: some View {
-        //HomeView().environmentObject(FirebaseAuthService())
-        HomeView(viewModel2: OwnerViewModel())
-    
+        //HomeView()
+        HomeView(viewModel2: OwnerViewModel()) .environmentObject(FirebaseAuthService())
     }
 }

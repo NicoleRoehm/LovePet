@@ -19,8 +19,11 @@ struct ContentView: View {
             }else{
                 LogInView()
             }
+           
+          
         }.onAppear{
             authServices.listentoAuthState()
+            
         }
         
         

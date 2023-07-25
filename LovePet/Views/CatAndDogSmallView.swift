@@ -21,6 +21,7 @@ struct CatAndDogSmallView: View {
                     .scaledToFit()
                 HStack{
                     Text(pet.name!)
+                    
                         .font(.system(size: 25))
                         .padding()
                     

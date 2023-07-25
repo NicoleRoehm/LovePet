@@ -11,6 +11,7 @@ struct ProfilDetailView: View {
     @StateObject var viewModel2 = OwnerViewModel()
     let owner: Owner
     
+    
     @State var isDrawerOpen = false
   
     
@@ -35,19 +36,21 @@ struct ProfilDetailView: View {
                         VStack{
                             Form{
                                 Section("Pets"){
-                                    ForEach(viewModel2.petsByOwner){ pet in
-                                        
-                                        NavigationLink{
-                                            PetsView()
-                                        }label: {
-                                            CatAndDogSmallView(pet: pet)
-                                        
+                                    if (!viewModel2.petsByOwner.isEmpty){
+                                        ForEach(viewModel2.petsByOwner){ pet in
+                                            
+                                            NavigationLink{
+                                                PetsView()
+                                            }label: {
+                                                CatAndDogSmallView(pet: pet)
+                                                
+                                            }
                                         }
                                     }
                                 }
                             }
                         }.onAppear{
-                            //viewModel2.fetchPetsbyOwner(owner: owner)
+                            viewModel2.fetchPetsbyOwner(ownerid: owner.id!)
                             
                         }
                         
@@ -79,8 +82,9 @@ struct ProfilDetailView: View {
 struct ProfilDetailView_Previews: PreviewProvider {
     static var viewModel = OwnerViewModel()
     static let owners = Owner.fetchRequest()
+    static let pets = Pets.fetchRequest()
     
     static var previews: some View {
-        ProfilDetailView( owner: viewModel.savedOwner.first! )
+        ProfilDetailView( owner: viewModel.savedOwner.first!)
     }
 }
