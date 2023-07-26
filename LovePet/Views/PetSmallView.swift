@@ -9,15 +9,12 @@
 import SwiftUI
 
 struct PetSmallView: View {
-    @StateObject var viewModel1 = DogApiService()
-    @StateObject var viewModel2 = CatApiService()
-    @StateObject var viewModel3 = OwnerViewModel()
+    @StateObject var dogApiService = DogApiService()
+    @StateObject var catApiService = CatApiService()
     
     var body: some View {
         NavigationStack{
             List{
-                
-                
                 NavigationLink(destination: CatListView() ){
                     VStack{
                         
@@ -30,11 +27,7 @@ struct PetSmallView: View {
                             .frame(width: 200, height: 200)
                             .padding(15)
                     }
-                    
-                    
                 }
-                
-                
                 VStack{
                     
                     NavigationLink(destination: DogListView()){
@@ -49,22 +42,12 @@ struct PetSmallView: View {
                                 .frame(width: 200, height: 200)
                                 .padding(15)
                         }
-                        
-                        
                     }
-                    
-                    
                 }
             }.navigationTitle("Animal breeds")
-            
         }
-        
     }
-        
     }
-    
-
-
 struct PetSmallView_Previews: PreviewProvider {
     static var previews: some View {
         PetSmallView()

@@ -8,12 +8,9 @@
 import SwiftUI
 
 struct ProfilDetailView: View {
-    @StateObject var viewModel2 = OwnerViewModel()
+    @EnvironmentObject var viewModel : OwnerViewModel
     let owner: Owner
-    
-    
     @State var isDrawerOpen = false
-  
     
     var body: some View {
        
@@ -22,8 +19,6 @@ struct ProfilDetailView: View {
                     Color.indigo.opacity(0.2)
                     VStack{
                         HStack(alignment: .center){
-                 
-                    
                             Image(owner.image!)
                                 .resizable()
                                 .frame(width: 125, height: 125)
@@ -32,31 +27,24 @@ struct ProfilDetailView: View {
                                 .foregroundColor(.black)
                                 .bold()
                         }
-                                
                         VStack{
                             Form{
                                 Section("Pets"){
-                                    if (!viewModel2.petsByOwner.isEmpty){
-                                        ForEach(viewModel2.petsByOwner){ pet in
+                                    if (!viewModel.petsByOwner.isEmpty){
+                                        ForEach(viewModel.petsByOwner){ pet in
                                             
                                             NavigationLink{
-                                                PetsView()
+                                                PetsDetailView(pets: viewModel.petsByOwner.first!)
                                             }label: {
                                                 CatAndDogSmallView(pet: pet)
-                                                
                                             }
                                         }
                                     }
                                 }
                             }
                         }.onAppear{
-                            viewModel2.fetchPetsbyOwner(ownerid: owner.id!)
-                            
+                            viewModel.fetchPetsbyOwner(ownerId: owner.id!)
                         }
-                        
-                        
-                    
-                   
                 }.toolbar {
                     ToolbarItem {
                         Button(
@@ -71,14 +59,12 @@ struct ProfilDetailView: View {
                     isPresented: $isDrawerOpen,
                     content:{
                         AddPetView(isDrawerOpen: $isDrawerOpen, owner: owner)
-                    })
-                }            }
+                    }
+                  )
+                }
+            }
         }
     }
-
-
-
-
 struct ProfilDetailView_Previews: PreviewProvider {
     static var viewModel = OwnerViewModel()
     static let owners = Owner.fetchRequest()
@@ -86,5 +72,6 @@ struct ProfilDetailView_Previews: PreviewProvider {
     
     static var previews: some View {
         ProfilDetailView( owner: viewModel.savedOwner.first!)
+                        .environmentObject(OwnerViewModel())
     }
 }

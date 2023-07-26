@@ -8,11 +8,11 @@
 import SwiftUI
 
 struct DogListView: View {
-    @StateObject var viewModel1 = DogApiService()
+    @StateObject var dogApiService = DogApiService()
     var body: some View {
         List{
             Section("Dogs"){
-                ForEach(viewModel1.dogs, id: \.self){
+                ForEach(dogApiService.dogs, id: \.self){
                     dog in
                     
                     VStack(alignment: .leading){
@@ -20,7 +20,7 @@ struct DogListView: View {
                     }
                 }
             }
-        }.onAppear{viewModel1.fetchDogs()}
+        }.onAppear{dogApiService.fetchDogs()}
         
     }
     

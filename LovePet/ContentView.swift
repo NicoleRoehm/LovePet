@@ -13,20 +13,16 @@ struct ContentView: View {
     
     var body: some View {
         
-       Group{
+       VStack{
             if authServices.user != nil{
                 HomeView()
             }else{
                 LogInView()
             }
-           
-          
         }.onAppear{
             authServices.listentoAuthState()
             
         }
-        
-        
     }
 }
 

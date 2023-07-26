@@ -9,7 +9,7 @@ import SwiftUI
 
 struct LogInView: View {
     @EnvironmentObject var authService: FirebaseAuthService
-    @StateObject var viewModel = OwnerViewModel()
+    @EnvironmentObject var viewModel : OwnerViewModel
     @State var email: String = ""
     @State var password: String = ""
     @State var name: String = ""
@@ -51,8 +51,6 @@ struct LogInView: View {
                     authService.signUp(email: email, password: password)
                     
                 }.buttonStyle(.bordered)
-            
-            
         }
     }
 }
@@ -60,5 +58,6 @@ struct LogInView: View {
 struct LogInView_Previews: PreviewProvider {
     static var previews: some View {
         LogInView().environmentObject(FirebaseAuthService())
+                   .environmentObject(OwnerViewModel())
     }
 }

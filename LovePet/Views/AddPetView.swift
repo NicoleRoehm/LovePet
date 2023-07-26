@@ -8,7 +8,7 @@
 import SwiftUI
 
 struct AddPetView: View {
-    @StateObject var viewModel3 = OwnerViewModel()
+    @EnvironmentObject var viewModel : OwnerViewModel
     @Binding var isDrawerOpen : Bool
     var owner: Owner
     @State var name = ""
@@ -16,7 +16,7 @@ struct AddPetView: View {
     @State var age = ""
     @State var gender = ""
     @State var descriptions = ""
-    @State var image = ""
+    
     
     var body: some View {
         VStack{
@@ -37,7 +37,7 @@ struct AddPetView: View {
                 
             }
             .padding()
-            
+                
                 TextField("Name", text: $name)
                 .padding(.leading)
                 TextField("Race", text: $race)
@@ -48,12 +48,13 @@ struct AddPetView: View {
                 .padding(.leading)
                 TextField("Description", text:$descriptions)
                 .padding(.leading)
+            
                   
                 Button(
                     action: {
-                        viewModel3.createNewPets(age: age, name: name , gender: gender, race: race, descriptions: descriptions, ownerId: owner.id!, image: image)
+                        viewModel.createNewPets(age: age, name: name , gender: gender, race: race, descriptions: descriptions, ownerId: viewModel.savedOwner.first!.id!, image: "")
                             isDrawerOpen = false
-                        viewModel3.fetchPetsbyOwner(ownerid: owner.id!)
+                        viewModel.fetchPetsbyOwner(ownerId: owner.id!)
                     
                 }, label: {
                     Text("add Pet")
@@ -79,5 +80,6 @@ struct AddPetView_Previews: PreviewProvider {
     static let owners = Owner.fetchRequest()
     static var previews: some View {
         AddPetView(isDrawerOpen:.constant(true), owner: viewModel.savedOwner.first!)
+                                .environmentObject(OwnerViewModel())
     }
 }

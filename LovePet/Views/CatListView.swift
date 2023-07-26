@@ -8,12 +8,12 @@
 import SwiftUI
 
 struct CatListView: View {
-    @StateObject var viewModel2 = CatApiService()
+    @StateObject var catApiService = CatApiService()
     var body: some View {
         VStack{
             List{
                 Section("Cats"){
-                    ForEach(viewModel2.cats, id: \.self){
+                    ForEach(catApiService.cats, id: \.self){
                         cat in
                         VStack(alignment: .leading){
                             
@@ -22,7 +22,7 @@ struct CatListView: View {
                     }
                 }
             }
-        }.onAppear{viewModel2.fetchCats()}
+        }.onAppear{catApiService.fetchCats()}
             
         
     }

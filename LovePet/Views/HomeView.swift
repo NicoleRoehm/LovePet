@@ -10,7 +10,7 @@ import SwiftUI
 
 struct HomeView: View {
     
-    @StateObject var viewModel2 = OwnerViewModel()
+    @EnvironmentObject var viewModel2 : OwnerViewModel
     @State private var isDrawerOpen = false
     @EnvironmentObject var authService :
     FirebaseAuthService
@@ -26,28 +26,28 @@ struct HomeView: View {
                             ProfilSmallView(owner: owner)
                         }
                     }
-                    
-                    
                 }
+                
                 .toolbar {
                     ToolbarItem {
                         Button(
                             action: {},
-                            label: {Label ("Menu",
-                                           systemImage: "gearshape") }
+                            label: {Label ("Settings",
+                                           systemImage: "gearshape")
+                            }
                         )
+                    }
+                    ToolbarItem{
+                        Button(
+                            action:{authService.signOut()},
+                        label: {Label("LogOut",
+                                      systemImage: "rectangle.portrait.and.arrow.right")})
                     }
                 }
                 
-                Button(
-                    action:{authService.signOut()
-                    }, label: {
-                        Text("LogOut")
-                            .padding(15)
-                    }
-                )
+                
             }
-                .navigationTitle("Profile")
+            .navigationTitle("Profile")
                 
                 
             }
@@ -61,6 +61,7 @@ struct HomeView_Previews: PreviewProvider {
     
     static var previews: some View {
         //HomeView()
-        HomeView(viewModel2: OwnerViewModel()) .environmentObject(FirebaseAuthService())
+        HomeView().environmentObject(OwnerViewModel())
+                  .environmentObject(FirebaseAuthService())
     }
 }
