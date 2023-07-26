@@ -12,16 +12,18 @@ struct ContentView: View {
         FirebaseAuthService
     
     var body: some View {
-        
-       VStack{
-            if authServices.user != nil{
-                HomeView()
-            }else{
-                LogInView()
-            }
-        }.onAppear{
-            authServices.listentoAuthState()
+        TabView {
             
+            Group{
+                if authServices.user != nil{
+                    HomeView()
+                }else{
+                    LogInView()
+                }
+            }.onAppear{
+                authServices.listentoAuthState()
+
+            }
         }
     }
 }

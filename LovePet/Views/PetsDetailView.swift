@@ -8,7 +8,7 @@
 import SwiftUI
 
 struct PetsDetailView: View {
-    var pets: Pets
+    var pet:Pets
     var body: some View {
         
         ZStack{
@@ -16,22 +16,22 @@ struct PetsDetailView: View {
             Color.orange.opacity(0.3)
         VStack{
             
-            Image(pets.image!)
+            Image(pet.image!)
                 .resizable()
                 .frame(width: 200, height: 200)
                 .padding(.bottom)
             
             List{
                 
-                    Text("Name:  \(pets.name!)")
+                Text("Name:  \(pet.name!)")
                     .bold()
-                    Text("Age: \(pets.age!)")
+                    Text("Age: \(pet.age!)")
                     .bold()
-                    Text("Race: \(pets.race!)")
+                    Text("Race: \(pet.race!)")
                     .bold()
-                    Text("Gender: \(pets.gender!)")
+                    Text("Gender: \(pet.gender!)")
                     .bold()
-                Text("Description: \(pets.descriptions!)")
+                Text("Description: \(pet.descriptions!)")
                     .bold()
                 
             }.fontDesign(.serif)
@@ -46,6 +46,6 @@ struct PetsDetailView_Previews: PreviewProvider {
     
     
     static var previews: some View {
-        PetsDetailView(pets: viewModel.petsByOwner.first!)
+        PetsDetailView(pet: viewModel.petsByOwner.first!)
     }
 }

@@ -10,7 +10,7 @@ import SwiftUI
 
 struct HomeView: View {
     
-    @EnvironmentObject var viewModel2 : OwnerViewModel
+    @EnvironmentObject var viewModel : OwnerViewModel
     @State private var isDrawerOpen = false
     @EnvironmentObject var authService :
     FirebaseAuthService
@@ -19,7 +19,7 @@ struct HomeView: View {
         NavigationStack{
             VStack{
                 List{
-                    ForEach(viewModel2.savedOwner, id:\ .self){ owner in
+                    ForEach(viewModel.savedOwner, id:\ .self){ owner in
                         NavigationLink{
                             ProfilDetailView(owner: owner)
                         }label: {
