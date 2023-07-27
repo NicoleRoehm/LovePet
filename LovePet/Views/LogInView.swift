@@ -41,13 +41,13 @@ struct LogInView: View {
                 
                 Button("SignIn"){
                     authService.signIn(email: email, password: password)
-                    
+                    //save currentOwner
                 }.buttonStyle(.borderedProminent)
             
                 Text("or")
             
                 Button("SignUp"){
-                    
+                    // create User
                     authService.signUp(email: email, password: password)
                     
                 }.buttonStyle(.bordered)

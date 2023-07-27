@@ -34,7 +34,7 @@ struct ProfilDetailView: View {
                                         ForEach(viewModel.petsByOwner){ pet in
                                             
                                             NavigationLink{
-                                                PetsDetailView(pet: viewModel.petsByOwner.first!)
+                                                PetsDetailView(pet: pet)
                                             }label: {
                                                 CatAndDogSmallView(pet: pet)
                                             }

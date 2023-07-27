@@ -8,7 +8,7 @@
 
 import SwiftUI
 
-struct PetSmallView: View {
+struct PetBreedsView: View {
     @StateObject var dogApiService = DogApiService()
     @StateObject var catApiService = CatApiService()
     
@@ -48,8 +48,8 @@ struct PetSmallView: View {
         }
     }
     }
-struct PetSmallView_Previews: PreviewProvider {
+struct PetBreedsView_Previews: PreviewProvider {
     static var previews: some View {
-        PetSmallView()
+        PetBreedsView()
     }
 }

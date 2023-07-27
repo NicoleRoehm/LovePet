@@ -28,13 +28,12 @@ class OwnerViewModel: ObservableObject{
             
         }
         
-        deleteAllPets()
-        deleteAllOwners()
-        createOwner(name: "Mike", image: "profilbild1")
+        //deleteAllPets()
+//        deleteAllOwners()
+//        createOwner(name: "Mike", image: "profilbild1")
         fetchOwners()
-        createNewPets(age: "2", name: "Pinky", gender: "female", race: "Birma", descriptions: "A loving cuddly cat with a lot of stamina.", ownerId: savedOwner.first!.id!, image: "katzenbild")
-//        createNewPets(age: "3", name: "Bouncy", gender: "male", race: "Dogge", descriptions: "A loving Dog, has a lot of temperament", ownerId: savedOwner.first!.id!, image: "hundebild")
-        fetchPetsbyOwner(ownerId: savedOwner.first!.id! )
+   
+        fetchPetsbyOwner(ownerId: savedOwner.first!.id! ) //
         fetchPets()
         
     }
