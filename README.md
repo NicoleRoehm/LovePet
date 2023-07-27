@@ -9,4 +9,5 @@ It's not finished yet, but it will be pushed every day and you can watch how the
 
 
 
-![Bild 27 07 23 um 16 10](https://github.com/NicoleRoehm/LovePet/assets/119949984/43aa1ebf-178a-473f-af9d-3edbb95822e4)
+
+![Bild 27 07 23 um 16 29](https://github.com/NicoleRoehm/LovePet/assets/119949984/64cedc1d-3d3f-47c8-9f8e-697f7949d92c)
