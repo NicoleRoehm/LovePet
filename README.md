@@ -11,4 +11,5 @@ It's not finished yet, but it will be pushed every day and you can watch how the
 
 
 
-![AppBildLogIn](https://github.com/NicoleRoehm/LovePet/assets/119949984/627a201f-3039-4b69-9dca-954f85a8b8be)
+
+![AppBildLogIn](https://github.com/NicoleRoehm/LovePet/assets/119949984/7c24df2c-aa9c-4117-b499-ccdc0476bc57)
