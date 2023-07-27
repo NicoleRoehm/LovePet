@@ -210,7 +210,7 @@ class OwnerViewModel: ObservableObject{
             print("fetching Pets")
            
                 do {
-                    var pets =  try persistentContainer.viewContext.fetch(request)
+                    let pets =  try persistentContainer.viewContext.fetch(request)
                     if !pets.isEmpty {
                         self.petsByOwner = pets
                     }

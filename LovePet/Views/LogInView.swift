@@ -23,20 +23,29 @@ struct LogInView: View {
                 .resizable()
                 .scaledToFit()
                 .frame(width: 200)
-            
-            TextField("Name", text: $name)
-                .padding()
+                .padding(.bottom, 70)
+            HStack{
+                Image(systemName: "person")
+                    .padding()
+                TextField("Name", text: $name)
                 .textFieldStyle(.roundedBorder)
-            
-            
+                .padding(5)
+            }
+            HStack{
+                Image(systemName: "envelope")
+                    .padding()
                 TextField("Email", text: $email)
+                .textFieldStyle(.roundedBorder)
+                .padding(.leading, 5)
+            }
+            HStack{
+                Image(systemName: "lock")
                     .padding()
-                    .textFieldStyle(.roundedBorder)
-                    
-                    
                 SecureField("Password", text: $password)
-                    .padding()
-                    .textFieldStyle(.roundedBorder)
+                .textFieldStyle(.roundedBorder)
+                .padding(5)
+                
+            }
                 
                 
                 Button("SignIn"){
