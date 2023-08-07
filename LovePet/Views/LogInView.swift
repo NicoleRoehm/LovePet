@@ -4,6 +4,7 @@
 //
 //  Created by Nicole Röhm on 26.06.23.
 //
+// Namen direkt mit registrieren fehlt noch 
 
 import SwiftUI
 
@@ -50,6 +51,7 @@ struct LogInView: View {
               
                 
                 Button("SignIn"){
+                    viewModel.createOwner(name: name, image: "profilbild1")
                     authService.signIn(email: email, password: password)
                     //save currentOwner
                 }.buttonStyle(.borderedProminent)
@@ -57,8 +59,9 @@ struct LogInView: View {
                 Text("or")
             
                 Button("SignUp"){
+                    viewModel.createOwner(name: name, image: "profilbild1")
                     
-                        authService.signUp(email: email, password: password)
+                       authService.signUp(email: email, password: password)
                     
                     
                 }.buttonStyle(.bordered)

@@ -4,6 +4,7 @@
 //
 //  Created by Nicole Röhm on 27.06.23.
 //
+// SplashView fehlt noch komplett
 
 import SwiftUI
 

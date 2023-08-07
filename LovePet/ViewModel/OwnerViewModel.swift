@@ -33,7 +33,7 @@ class OwnerViewModel: ObservableObject{
 //        createOwner(name: "Mike", image: "profilbild1")
         fetchOwners()
    
-        fetchPetsbyOwner(ownerId: savedOwner.first!.id! ) //
+        fetchPetsbyOwner(ownerId: savedOwner.first!.id!) //
         fetchPets()
         
     }

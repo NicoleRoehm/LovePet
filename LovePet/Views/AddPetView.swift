@@ -4,6 +4,7 @@
 //
 //  Created by Nicole Röhm on 03.07.23.
 //
+// Bild muss noch eingefügt werden
 
 import SwiftUI
 

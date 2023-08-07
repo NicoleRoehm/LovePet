@@ -3,6 +3,8 @@
 //  LovePet
 //
 //  Created by Nicole Röhm on 23.06.23.
+
+// TabView einfügen
 //
 
 import SwiftUI
@@ -12,9 +14,11 @@ struct ContentView: View {
         FirebaseAuthService
     
     var body: some View {
-        Group{
+        TabView{
             if authServices.user != nil{
-                HomeView()
+                HomeView().tabItem{
+                 Label("Home", systemImage: "house")
+                }
             }else{
                 LogInView()
             }
@@ -23,6 +27,7 @@ struct ContentView: View {
         }
     }
 }
+
 
 struct ContentView_Previews: PreviewProvider {
     static var previews: some View {

@@ -3,7 +3,10 @@
 //  LovePet
 //
 //  Created by Nicole Röhm on 03.07.23.
-//Bild von <a href="https://pixabay.com/de/users/openclipart-vectors-30363/?utm_source=link-attribution&utm_medium=referral&utm_campaign=image&utm_content=150909">OpenClipart-Vectors</a> auf <a href="https://pixabay.com/de//?utm_source=link-attribution&utm_medium=referral&utm_campaign=image&utm_content=150909">Pixabay</a>//
+//HundeBild von:
+//Bild von <a href="https://pixabay.com/de/users/ralfdesign-2031934/?utm_source=link-attribution&utm_medium=referral&utm_campaign=image&utm_content=4862083">Ralf Designs</a> auf <a href="https://pixabay.com/de//?utm_source=link-attribution&utm_medium=referral&utm_campaign=image&utm_content=4862083">Pixabay</a>
+
+//KatzenBild von:
 //Bild von <a href="https://pixabay.com/de/users/edurs34-8516248/?utm_source=link-attribution&utm_medium=referral&utm_campaign=image&utm_content=4888355">Eduardo • Subscribe to my YT Channel❤️</a> auf <a href="https://pixabay.com/de//?utm_source=link-attribution&utm_medium=referral&utm_campaign=image&utm_content=4888355">Pixabay</a>
 
 import SwiftUI
@@ -37,7 +40,7 @@ struct PetBreedsView: View {
                                 .foregroundColor(.blue)
                                 .font(.title)
                                 .padding(1)
-                            Image("hundebild")
+                            Image("hundebild2")
                                 .resizable()
                                 .frame(width: 200, height: 200)
                                 .padding(15)
