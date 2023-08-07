@@ -17,17 +17,25 @@ struct ContentView: View {
         FirebaseAuthService
     
     @EnvironmentObject var viewModel : OwnerViewModel
-  
+    @AppStorage("UserId") var userId = ""
+    
     var body: some View {
         Group{
-            if authServices.user != nil{
-               
-                ProfilDetailView(owner:viewModel.savedOwner.first(where: {$0.id == UUID(uuidString: authServices.user!.uid)})!)
+            if userId != ""{
+                
+                ProfilDetailView(owner: viewModel.savedOwner.first!)
+                
+                Text("logged In")
+                
             }else{
                 LogInView()
             }
-        }.onAppear{
+            
+        }
+        .onAppear{
             authServices.listentoAuthState()
+            //authServices.signOut()
+        
         }
     }
 }

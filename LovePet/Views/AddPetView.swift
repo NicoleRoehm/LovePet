@@ -17,7 +17,7 @@ struct AddPetView: View {
     @State var age = ""
     @State var gender = ""
     @State var descriptions = ""
-    
+    @AppStorage("UserId") var userId = ""
     
     var body: some View {
         VStack{
@@ -53,9 +53,9 @@ struct AddPetView: View {
                   
                 Button(
                     action: {
-                        viewModel.createNewPets(age: age, name: name , gender: gender, race: race, descriptions: descriptions, ownerId: viewModel.savedOwner.first!.id!, image: "")
+                        viewModel.createNewPets(age: age, name: name , gender: gender, race: race, descriptions: descriptions, ownerId: userId, image: "")
                             isDrawerOpen = false
-                        viewModel.fetchPetsbyOwner(ownerId: owner.id!)
+                        viewModel.fetchPetsbyOwner(ownerId: userId)
                     
                 }, label: {
                     Text("add Pet")

@@ -16,6 +16,7 @@ struct LogInView: View {
     @State var email: String = ""
     @State var password: String = ""
     @State var name: String = ""
+    @AppStorage("UserId") var userId = ""
     
     var body: some View {
         
@@ -53,9 +54,10 @@ struct LogInView: View {
               
                 
                 Button("SignIn"){
+                    
                     authService.signIn(email: email, password: password)
-                    viewModel.createOwner(name: name, image: "profilbild1", id: authService.user?.uid ?? "")
-                   
+                    viewModel.createOwner(name: name, image: "profilbild1", iD: userId)
+                    
                     //save currentOwner
                 }.buttonStyle(.borderedProminent)
             
@@ -63,7 +65,7 @@ struct LogInView: View {
             
                 Button("SignUp"){
                     authService.signUp(email: email, password: password)
-                    viewModel.createOwner(name: name, image: "profilbild1", id: authService.user?.uid ?? "")
+                    viewModel.createOwner(name: name, image: "profilbild1", iD: userId)
                     
                        
                     

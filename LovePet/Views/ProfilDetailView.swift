@@ -14,6 +14,7 @@ struct ProfilDetailView: View {
     FirebaseAuthService
     let owner: Owner
     @State var isDrawerOpen = false
+    @AppStorage("UserId") var userId = ""
     
     var body: some View {
        
@@ -46,7 +47,7 @@ struct ProfilDetailView: View {
                                 }
                             }
                         }.onAppear{
-                            viewModel.fetchPetsbyOwner(ownerId: owner.id!)
+                            viewModel.fetchPetsbyOwner(ownerId: userId)
                         }
                 }.toolbar {
                     ToolbarItem {

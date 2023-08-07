@@ -30,9 +30,9 @@ class OwnerViewModel: ObservableObject{
 //       deleteAllOwners()
 //       createOwner(name: "Mike", image: "profilbild1")
         fetchOwners()
-        if !savedOwner.isEmpty{
-            fetchPetsbyOwner(ownerId: savedOwner.first!.id!)
-        }
+       // if !savedOwner.isEmpty{
+          //  fetchPetsbyOwner(ownerId: savedOwner.first!.id!)
+        //}
         fetchPets()
         
     }
@@ -42,7 +42,7 @@ class OwnerViewModel: ObservableObject{
         
         do{
             savedOwner = try persistentContainer.viewContext.fetch(request)
-            
+            print(savedOwner.count)
         }catch{
             print("Error fetching: \(error.localizedDescription)")
         }
@@ -58,13 +58,13 @@ class OwnerViewModel: ObservableObject{
             print("Error fetching: \(error.localizedDescription)")
         }
     }
-    func createOwner(name:String, image:String, id: String){
+    func createOwner(name:String, image:String, iD: String){
         
         let newOwner = Owner(context: persistentContainer.viewContext)
         
         newOwner.name = name
         newOwner.image = image
-        newOwner.id = UUID(uuidString: id)
+        newOwner.id = iD
         
         do{
             try persistentContainer.viewContext.save()
@@ -74,7 +74,7 @@ class OwnerViewModel: ObservableObject{
         }
     }
     
-    func createNewPets(age: String, name:String, gender: String,race: String, descriptions:String, ownerId: UUID, image: String){
+    func createNewPets(age: String, name:String, gender: String,race: String, descriptions:String, ownerId: String, image: String){
         
         let newPet = Pets(context: persistentContainer.viewContext)
         
@@ -199,10 +199,10 @@ class OwnerViewModel: ObservableObject{
         }
     }
     
-    func fetchPetsbyOwner(ownerId: UUID){
+    func fetchPetsbyOwner(ownerId: String){
         
         let request = NSFetchRequest<Pets>(entityName: String(describing: "Pets"))
-        let ownerPredicate = NSPredicate(format: "ownerId == %@", ownerId as CVarArg)
+        let ownerPredicate = NSPredicate(format: "ownerId == %@", ownerId )
         request.predicate = ownerPredicate
         
                 do {

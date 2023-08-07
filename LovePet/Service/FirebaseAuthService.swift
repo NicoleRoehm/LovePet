@@ -9,8 +9,12 @@
 
 import Foundation
 import FirebaseAuth
+import SwiftUI
 
 class FirebaseAuthService : ObservableObject{
+    
+    @AppStorage("UserId") var userId = ""
+    
     
     var user : User?{
         didSet{
@@ -29,7 +33,9 @@ class FirebaseAuthService : ObservableObject{
             if let error = error{
                 print("User can´t create \(error.localizedDescription)")
                 return
+                
             }
+            self.userId = result!.user.uid
             
         }
     }
@@ -38,12 +44,14 @@ class FirebaseAuthService : ObservableObject{
             if let error = error{
                 print("User can´t LogIn \(error.localizedDescription)")
             }
+            self.userId = result!.user.uid
             
         }
     }
     func signOut(){
         do{
             try Auth.auth().signOut()
+            self.userId = ""
         }catch{
             print(error)
         }
