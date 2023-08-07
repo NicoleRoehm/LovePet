@@ -12,18 +12,14 @@ struct ContentView: View {
         FirebaseAuthService
     
     var body: some View {
-        TabView {
-            
-            Group{
-                if authServices.user != nil{
-                    HomeView()
-                }else{
-                    LogInView()
-                }
-            }.onAppear{
-                authServices.listentoAuthState()
-
+        Group{
+            if authServices.user != nil{
+                HomeView()
+            }else{
+                LogInView()
             }
+        }.onAppear{
+            authServices.listentoAuthState()
         }
     }
 }

@@ -30,13 +30,14 @@ struct HomeView: View {
                 
                 .toolbar {
                     ToolbarItem {
+                        NavigationLink(destination: SettingsView()){
                             Button(
-                                action: {NavigationLink("Settings", destination: SettingsView())},
+                                action: {},
                                 label: {Label ("Settings",
                                                systemImage: "gearshape")
                                 }
                             )
-                        
+                        }
                     }
                     ToolbarItem{
                         Button(
@@ -45,15 +46,9 @@ struct HomeView: View {
                                       systemImage: "rectangle.portrait.and.arrow.right")})
                     }
                 }
-                
-                            
             }
             .navigationTitle("Profile")
-                
-                
             }
-      
-            
         }
     }
 

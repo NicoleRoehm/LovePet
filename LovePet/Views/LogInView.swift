@@ -16,8 +16,9 @@ struct LogInView: View {
     
     var body: some View {
         
+        Color.yellow.ignoresSafeArea()
         
-        VStack{
+            .overlay(VStack{
             
             Image("logolp")
                 .resizable()
@@ -26,27 +27,27 @@ struct LogInView: View {
                 .padding(.bottom, 70)
             HStack{
                 Image(systemName: "person")
-                    .padding()
+                    .padding(18)
                 TextField("Name", text: $name)
                 .textFieldStyle(.roundedBorder)
-                .padding(5)
+                .padding(.horizontal)
             }
             HStack{
                 Image(systemName: "envelope")
                     .padding()
                 TextField("Email", text: $email)
                 .textFieldStyle(.roundedBorder)
-                .padding(.leading, 5)
+                .padding(.horizontal)
             }
             HStack{
                 Image(systemName: "lock")
-                    .padding()
+                    .padding(18)
                 SecureField("Password", text: $password)
                 .textFieldStyle(.roundedBorder)
-                .padding(5)
+                .padding(.horizontal)
                 
             }
-                
+              
                 
                 Button("SignIn"){
                     authService.signIn(email: email, password: password)
@@ -62,6 +63,7 @@ struct LogInView: View {
                     
                 }.buttonStyle(.bordered)
         }
+    )
     }
 }
 
