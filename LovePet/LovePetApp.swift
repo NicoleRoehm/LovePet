@@ -15,10 +15,13 @@ struct LovePetApp: App {
     @StateObject var fireBaseAuth = FirebaseAuthService()
     init(){
         FirebaseApp.configure()
+        
+        
     }
     var body: some Scene {
         WindowGroup {
-            ContentView().environmentObject(FirebaseAuthService())
+            ContentView()
+                .environmentObject(FirebaseAuthService())
                         .environmentObject(OwnerViewModel())
         }
     }

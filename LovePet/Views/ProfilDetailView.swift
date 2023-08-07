@@ -4,11 +4,14 @@
 //
 //  Created by Nicole Röhm on 14.07.23.
 //
+// 
 
 import SwiftUI
 
 struct ProfilDetailView: View {
     @EnvironmentObject var viewModel : OwnerViewModel
+    @EnvironmentObject var authService :
+    FirebaseAuthService
     let owner: Owner
     @State var isDrawerOpen = false
     
@@ -53,8 +56,15 @@ struct ProfilDetailView: View {
                                 systemImage: "plus") }
                         )
                     }
+                    ToolbarItem{
+                        Button(
+                            action: {
+                                authService.signOut()
+                            },
+                            label:{Label("LogOut", systemImage: "rectangle.portrait.and.arrow.right")})
+                    }
                 }
-                .navigationTitle("Profile")
+                .navigationTitle("Profil")
                 .sheet(
                     isPresented: $isDrawerOpen,
                     content:{
@@ -71,7 +81,8 @@ struct ProfilDetailView_Previews: PreviewProvider {
     static let pets = Pets.fetchRequest()
     
     static var previews: some View {
-        ProfilDetailView( owner: viewModel.savedOwner.first!)
+        ProfilDetailView(owner: viewModel.savedOwner.first!)
                         .environmentObject(OwnerViewModel())
+                        .environmentObject(FirebaseAuthService())
     }
 }

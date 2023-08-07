@@ -4,7 +4,9 @@
 //
 //  Created by Nicole Röhm on 26.06.23.
 //
-// Namen direkt mit registrieren fehlt noch 
+// Namen direkt mit registrieren fehlt noch
+// haben heute lange dran gesessen, aber es funktioniert leider nicht
+// die App crasht im Moment komplett. Wenn man sie im Emulator öffnen möchte 
 
 import SwiftUI
 
@@ -51,17 +53,19 @@ struct LogInView: View {
               
                 
                 Button("SignIn"){
-                    viewModel.createOwner(name: name, image: "profilbild1")
                     authService.signIn(email: email, password: password)
+                    viewModel.createOwner(name: name, image: "profilbild1", id: authService.user?.uid ?? "")
+                   
                     //save currentOwner
                 }.buttonStyle(.borderedProminent)
             
                 Text("or")
             
                 Button("SignUp"){
-                    viewModel.createOwner(name: name, image: "profilbild1")
+                    authService.signUp(email: email, password: password)
+                    viewModel.createOwner(name: name, image: "profilbild1", id: authService.user?.uid ?? "")
                     
-                       authService.signUp(email: email, password: password)
+                       
                     
                     
                 }.buttonStyle(.bordered)

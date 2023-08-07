@@ -22,7 +22,7 @@
 		093AC0DA2A4977B200F20678 /* FirebaseStorage in Frameworks */ = {isa = PBXBuildFile; productRef = 093AC0D92A4977B200F20678 /* FirebaseStorage */; };
 		093AC0DC2A4977B200F20678 /* FirebaseStorageCombine-Community in Frameworks */ = {isa = PBXBuildFile; productRef = 093AC0DB2A4977B200F20678 /* FirebaseStorageCombine-Community */; };
 		093AC0E12A49C77300F20678 /* LogInView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 093AC0E02A49C77300F20678 /* LogInView.swift */; };
-		093AC0E32A49D19A00F20678 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 093AC0E22A49D19A00F20678 /* HomeView.swift */; };
+		093AC0E32A49D19A00F20678 /* ProfilListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 093AC0E22A49D19A00F20678 /* ProfilListView.swift */; };
 		093AC0E52A4AC48400F20678 /* SplashView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 093AC0E42A4AC48400F20678 /* SplashView.swift */; };
 		093AC0EC2A4C436300F20678 /* DogApiService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 093AC0EB2A4C436300F20678 /* DogApiService.swift */; };
 		093AC0EE2A4C437200F20678 /* CatApiService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 093AC0ED2A4C437200F20678 /* CatApiService.swift */; };
@@ -75,7 +75,7 @@
 		093AC0C22A49765100F20678 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		093AC0DF2A4992F900F20678 /* Pflichtenheft Batch005 3.pages */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Pflichtenheft Batch005 3.pages"; sourceTree = "<group>"; };
 		093AC0E02A49C77300F20678 /* LogInView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogInView.swift; sourceTree = "<group>"; };
-		093AC0E22A49D19A00F20678 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
+		093AC0E22A49D19A00F20678 /* ProfilListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfilListView.swift; sourceTree = "<group>"; };
 		093AC0E42A4AC48400F20678 /* SplashView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashView.swift; sourceTree = "<group>"; };
 		093AC0EB2A4C436300F20678 /* DogApiService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DogApiService.swift; sourceTree = "<group>"; };
 		093AC0ED2A4C437200F20678 /* CatApiService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CatApiService.swift; sourceTree = "<group>"; };
@@ -232,7 +232,7 @@
 			children = (
 				093AC0E42A4AC48400F20678 /* SplashView.swift */,
 				093AC0E02A49C77300F20678 /* LogInView.swift */,
-				093AC0E22A49D19A00F20678 /* HomeView.swift */,
+				093AC0E22A49D19A00F20678 /* ProfilListView.swift */,
 				09BE37412A52BB0A00D541D5 /* AddPetView.swift */,
 				09BE37432A52BB2200D541D5 /* PetBreedsView.swift */,
 				09BE374A2A52CD3900D541D5 /* ChatView.swift */,
@@ -449,7 +449,7 @@
 				099D65C62A65412400FC68BA /* DogListView.swift in Sources */,
 				09BE374B2A52CD3900D541D5 /* ChatView.swift in Sources */,
 				093AC0EC2A4C436300F20678 /* DogApiService.swift in Sources */,
-				093AC0E32A49D19A00F20678 /* HomeView.swift in Sources */,
+				093AC0E32A49D19A00F20678 /* ProfilListView.swift in Sources */,
 				094288292A45D93500EA2D67 /* ContentView.swift in Sources */,
 				09BE37462A52CB2900D541D5 /* ApiKeyDog.swift in Sources */,
 				094288272A45D93500EA2D67 /* LovePetApp.swift in Sources */,

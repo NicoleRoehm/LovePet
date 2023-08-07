@@ -25,19 +25,17 @@ class OwnerViewModel: ObservableObject{
             if let error = error{
                 fatalError("CoreData store failed: \(error.localizedDescription)")
             }
-            
         }
-        
         //deleteAllPets()
-//        deleteAllOwners()
-//        createOwner(name: "Mike", image: "profilbild1")
+//       deleteAllOwners()
+//       createOwner(name: "Mike", image: "profilbild1")
         fetchOwners()
-   
-        fetchPetsbyOwner(ownerId: savedOwner.first!.id!) //
+        if !savedOwner.isEmpty{
+            fetchPetsbyOwner(ownerId: savedOwner.first!.id!)
+        }
         fetchPets()
         
     }
-    
     func fetchOwners(){
         
         let request = NSFetchRequest<Owner>(entityName: String(describing: Owner.self))
@@ -60,13 +58,13 @@ class OwnerViewModel: ObservableObject{
             print("Error fetching: \(error.localizedDescription)")
         }
     }
-    func createOwner(name:String, image:String){
+    func createOwner(name:String, image:String, id: String){
         
         let newOwner = Owner(context: persistentContainer.viewContext)
         
         newOwner.name = name
         newOwner.image = image
-        newOwner.id = UUID()
+        newOwner.id = UUID(uuidString: id)
         
         do{
             try persistentContainer.viewContext.save()
@@ -206,9 +204,7 @@ class OwnerViewModel: ObservableObject{
         let request = NSFetchRequest<Pets>(entityName: String(describing: "Pets"))
         let ownerPredicate = NSPredicate(format: "ownerId == %@", ownerId as CVarArg)
         request.predicate = ownerPredicate
-        do{
-            print("fetching Pets")
-           
+        
                 do {
                     let pets =  try persistentContainer.viewContext.fetch(request)
                     if !pets.isEmpty {
@@ -218,8 +214,6 @@ class OwnerViewModel: ObservableObject{
                 }catch{
                     print("Error while fetching and saving: \(error.localizedDescription)")
                 }
-            
-        }
     }
     
 }
