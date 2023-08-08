@@ -77,8 +77,7 @@ struct LogInView: View {
 }
 
 struct LogInView_Previews: PreviewProvider {
-    static var viewModel = OwnerViewModel()
-    static let owners = Owner.fetchRequest()
+
     static var previews: some View {
         LogInView().environmentObject(FirebaseAuthService())
                    .environmentObject(OwnerViewModel())

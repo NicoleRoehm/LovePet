@@ -31,11 +31,12 @@ struct SettingsView: View {
                     }maximumValueLabel: {
                         Text("")
                     }
-                    
-                    
+                }
+                Section(header: Text("Theme")){
+                    ColorPicker("Colortheme", selection: /*@START_MENU_TOKEN@*/.constant(.red)/*@END_MENU_TOKEN@*/)
                 }
             }
-            
+
         }
     }
 }

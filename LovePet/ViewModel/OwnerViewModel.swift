@@ -30,8 +30,8 @@ class OwnerViewModel: ObservableObject{
 //       deleteAllOwners()
 //       createOwner(name: "Mike", image: "profilbild1")
         fetchOwners()
-       // if !savedOwner.isEmpty{
-          //  fetchPetsbyOwner(ownerId: savedOwner.first!.id!)
+//       if !savedOwner.isEmpty{
+//           fetchPetsbyOwner(ownerId: savedOwner.first!.id!)
         //}
         fetchPets()
         

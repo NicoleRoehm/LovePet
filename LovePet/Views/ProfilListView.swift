@@ -16,26 +16,22 @@ struct ProfilListView: View {
     FirebaseAuthService
     
     var body: some View {
-        NavigationStack{
-            VStack{
-                List{
-                    ForEach(viewModel.savedOwner, id:\ .self){ owner in
-                        NavigationLink{
-                            ProfilDetailView(owner: owner)
-                        }label: {
-                            ProfilSmallView(owner: owner)
+            NavigationStack{
+                VStack{
+                    List{
+                        ForEach(viewModel.savedOwner, id:\ .self){ owner in
+                            NavigationLink{
+                                ProfilDetailView(owner: owner)
+                            }label: {
+                                ProfilSmallView(owner: owner)
+                            }
                         }
                     }
                 }
-                
-               
-            }
-            .navigationTitle("Profile")
+                .navigationTitle("Profile")
             }
         }
     }
-
-
 struct ProfilListView_Previews: PreviewProvider {
     
     static var previews: some View {

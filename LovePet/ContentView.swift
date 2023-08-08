@@ -20,31 +20,29 @@ struct ContentView: View {
     @AppStorage("UserId") var userId = ""
     
     var body: some View {
-        Group{
-            if userId != ""{
-                
-                ProfilDetailView(owner: viewModel.savedOwner.first!)
-                
-                Text("logged In")
-                
-            }else{
-                LogInView()
-            }
-            
-        }
-        .onAppear{
-            authServices.listentoAuthState()
-            //authServices.signOut()
         
-        }
+        
+            Group{
+                if userId != ""{
+                    
+                    ProfilDetailView(owner: viewModel.savedOwner.first!)
+                    
+                }else{
+                    LogInView()
+                }
+                
+            }
+            .onAppear{
+                authServices.listentoAuthState()
+                
+                
+            }
     }
 }
 
 
 struct ContentView_Previews: PreviewProvider {
-    static var viewModel = OwnerViewModel()
-    static let owners = Owner.fetchRequest()
-    static let pets = Pets.fetchRequest()
+   
     
     static var previews: some View {
         ContentView().environmentObject(FirebaseAuthService())
