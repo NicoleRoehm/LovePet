@@ -72,9 +72,11 @@ struct ProfilView: View {
 }
 
 struct ProfilView_Previews: PreviewProvider {
+    static var viewModel = OwnerViewModel()
     static var previews: some View {
-        ProfilView(owner: Owner())
+        ProfilView(owner: viewModel.savedOwner.first!)
             .environmentObject(OwnerViewModel())
+            
             
     }
 }

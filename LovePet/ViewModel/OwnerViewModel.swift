@@ -19,13 +19,14 @@ class OwnerViewModel: ObservableObject{
     @Published var petsByOwner: [Pets] = []
     
     init(){
-        persistentContainer = NSPersistentContainer(name: "OwnerModel")
-        
-        persistentContainer.loadPersistentStores{description, error in
-            if let error = error{
-                fatalError("CoreData store failed: \(error.localizedDescription)")
+            persistentContainer = NSPersistentContainer(name: "OwnerModel")
+            
+            persistentContainer.loadPersistentStores{description, error in
+                if let error = error{
+                    fatalError("CoreData store failed: \(error.localizedDescription)")
+                }
             }
-        }
+    
         //deleteAllPets()
 //       deleteAllOwners()
 //       createOwner(name: "Mike", image: "profilbild1")

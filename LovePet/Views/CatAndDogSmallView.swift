@@ -43,7 +43,7 @@ struct CatAndDogSmallView: View {
 struct CatAndDogSmallView_Previews: PreviewProvider {
     
     static var viewModel = OwnerViewModel()
-    static let pets = Pets.fetchRequest()
+    
     
     static var previews: some View {
         CatAndDogSmallView(pet: viewModel.savedPets.first!)

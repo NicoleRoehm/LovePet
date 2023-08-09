@@ -55,8 +55,9 @@ struct ProfilDetailView: View {
         }
     }
 struct ProfilDetailView_Previews: PreviewProvider {
+    static var viewModel = OwnerViewModel()
     static var previews: some View {
-        ProfilDetailView(owner: Owner())
+        ProfilDetailView(owner: viewModel.savedOwner.first!)
                         .environmentObject(OwnerViewModel())
                         .environmentObject(FirebaseAuthService())
     }

@@ -17,21 +17,21 @@ struct ProfilListView: View {
     
     var body: some View {
             NavigationStack{
-                VStack{
-                    List{
-                        ForEach(viewModel.savedOwner, id:\ .self){ owner in
-                            NavigationLink{
-                                ProfilDetailView(owner: owner)
-                            }label: {
-                                ProfilSmallView(owner: owner)
+            
+                    VStack{
+                        List{
+                            ForEach(viewModel.savedOwner, id:\ .self){ owner in
+                                NavigationLink{
+                                    ProfilDetailView(owner: owner)
+                                }label: {
+                                    ProfilSmallView(owner: owner)
+                                }
+                            }.onDelete{ indexSet in
+                                viewModel.savedOwner.remove(atOffsets: indexSet)
                             }
-                        }.onDelete{ indexSet in
-                            viewModel.savedOwner.remove(atOffsets: indexSet)
                         }
                     }
-                }
-                .navigationTitle("Profile")
-                
+                    .navigationTitle("Profile")
             }
         }
     }

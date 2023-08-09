@@ -23,6 +23,9 @@ struct CatListView: View {
                 }
             }
         }.onAppear{catApiService.fetchCats()}
+            .colorMultiply(Color.yellow)
+            .bold()
+            .cornerRadius(.leastNonzeroMagnitude)
             
         
     }

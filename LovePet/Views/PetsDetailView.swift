@@ -46,6 +46,6 @@ struct PetsDetailView_Previews: PreviewProvider {
     
     
     static var previews: some View {
-        PetsDetailView(pet: viewModel.petsByOwner.first!)
+        PetsDetailView(pet:viewModel.savedPets.first!)
     }
 }

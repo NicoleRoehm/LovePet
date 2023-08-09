@@ -76,11 +76,10 @@ struct AddPetView: View {
 }
 
 
-struct AddPetView_Previews: PreviewProvider {
-    static var viewModel = OwnerViewModel()
-    static let owners = Owner.fetchRequest()
-    static var previews: some View {
-        AddPetView(isDrawerOpen:.constant(true), owner: viewModel.savedOwner.first!)
-                                .environmentObject(OwnerViewModel())
-    }
-}
+//struct AddPetView_Previews: PreviewProvider {
+//    static var viewModel = OwnerViewModel()
+//    static var previews: some View {
+//        AddPetView(isDrawerOpen:.constant(true), owner: viewModel.savedOwner.first!)
+//                                .environmentObject(OwnerViewModel())
+//    }
+//}
