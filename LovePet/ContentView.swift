@@ -25,7 +25,7 @@ struct ContentView: View {
             Group{
                 if userId != ""{
                     
-                    ProfilDetailView(owner: viewModel.savedOwner.first!)
+                    HomeView(owner: viewModel.savedOwner.first!)
                     
                 }else{
                     LogInView()
@@ -46,6 +46,7 @@ struct ContentView_Previews: PreviewProvider {
     
     static var previews: some View {
         ContentView().environmentObject(FirebaseAuthService())
+            .environmentObject(OwnerViewModel())
     }
 }
 

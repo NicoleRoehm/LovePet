@@ -25,17 +25,19 @@ struct ProfilListView: View {
                             }label: {
                                 ProfilSmallView(owner: owner)
                             }
+                        }.onDelete{ indexSet in
+                            viewModel.savedOwner.remove(atOffsets: indexSet)
                         }
                     }
                 }
                 .navigationTitle("Profile")
+                
             }
         }
     }
 struct ProfilListView_Previews: PreviewProvider {
     
     static var previews: some View {
-        //HomeView()
         ProfilListView().environmentObject(OwnerViewModel())
                   .environmentObject(FirebaseAuthService())
     }

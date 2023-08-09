@@ -21,8 +21,8 @@ struct LovePetApp: App {
     var body: some Scene {
         WindowGroup {
             ContentView()
-                .environmentObject(FirebaseAuthService())
-                        .environmentObject(OwnerViewModel())
+                .environmentObject(viewModel)
+                        .environmentObject(fireBaseAuth)
         }
     }
 }
