@@ -15,6 +15,7 @@ struct ProfilListView: View {
     @EnvironmentObject var authService :
     FirebaseAuthService
     
+    
     var body: some View {
             NavigationStack{
             
@@ -27,7 +28,8 @@ struct ProfilListView: View {
                                     ProfilSmallView(owner: owner)
                                 }
                             }.onDelete{ indexSet in
-                                viewModel.savedOwner.remove(atOffsets: indexSet)
+                                viewModel.deleteOwner(owner: viewModel.savedOwner[indexSet.first!])
+                                    
                             }
                         }
                     }

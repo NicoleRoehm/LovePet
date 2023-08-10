@@ -29,11 +29,11 @@ class OwnerViewModel: ObservableObject{
     
         //deleteAllPets()
 //       deleteAllOwners()
-//       createOwner(name: "Mike", image: "profilbild1")
+//        createOwner(name: "Mike", image: "profilbild1", iD: "")
         fetchOwners()
 //       if !savedOwner.isEmpty{
-//           fetchPetsbyOwner(ownerId: savedOwner.first!.id!)
-        //}
+//          fetchPetsbyOwner(ownerId: savedOwner.first!.id!)
+//        }
         fetchPets()
         
     }
@@ -43,7 +43,7 @@ class OwnerViewModel: ObservableObject{
         
         do{
             savedOwner = try persistentContainer.viewContext.fetch(request)
-            print(savedOwner.count)
+            
         }catch{
             print("Error fetching: \(error.localizedDescription)")
         }
@@ -215,6 +215,18 @@ class OwnerViewModel: ObservableObject{
                 }catch{
                     print("Error while fetching and saving: \(error.localizedDescription)")
                 }
+    }
+    
+    func deleteOwner(owner : Owner){
+        
+        persistentContainer.viewContext.delete(owner)
+        do{
+            try persistentContainer.viewContext.save()
+            fetchOwners()
+        }catch{
+            print("Error delete Owner: \(error.localizedDescription)")
+        }
+        
     }
     
 }

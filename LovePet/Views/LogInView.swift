@@ -54,9 +54,11 @@ struct LogInView: View {
               
                 
                 Button("SignIn"){
-                    
-                    authService.signIn(email: email, password: password)
-                    viewModel.createOwner(name: name, image: "profilbild1", iD: userId)
+                    if name == "" {
+                        authService.signIn(email: email, password: password)
+                        
+                    }
+                   
                     
                     //save currentOwner
                 }.buttonStyle(.borderedProminent)

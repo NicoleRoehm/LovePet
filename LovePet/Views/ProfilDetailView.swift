@@ -31,21 +31,10 @@ struct ProfilDetailView: View {
                         VStack{
                             Form{
                                 Section("Pets"){
-                                    if (!viewModel.petsByOwner.isEmpty){
-                                        ForEach(viewModel.petsByOwner){ pet in
-                                            
-                                            NavigationLink{
-                                                PetsDetailView(pet: pet)
-                                            }label: {
-                                                CatAndDogSmallView(pet: pet)
-                                            }
-                                        }
-                                    }
                                 }
                             }
                             
-                        }.onAppear{
-                            viewModel.fetchPetsbyOwner(ownerId: userId)
+                        }
                                 
                         }
                     }
@@ -53,7 +42,7 @@ struct ProfilDetailView: View {
                 }
             }
         }
-    }
+
 struct ProfilDetailView_Previews: PreviewProvider {
     static var viewModel = OwnerViewModel()
     static var previews: some View {
