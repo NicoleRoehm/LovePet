@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		092BDCF72A8BD672008BC2F2 /* LovePet.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 092BDCF62A8BD672008BC2F2 /* LovePet.pdf */; };
 		09326EDF2A696CB40086D60F /* CatAndDogSmallView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09326EDE2A696CB40086D60F /* CatAndDogSmallView.swift */; };
 		093AC0C32A49765100F20678 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 093AC0C22A49765100F20678 /* GoogleService-Info.plist */; };
 		093AC0C62A4977B200F20678 /* FirebaseAuth in Frameworks */ = {isa = PBXBuildFile; productRef = 093AC0C52A4977B200F20678 /* FirebaseAuth */; };
@@ -74,6 +75,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		092BDCF62A8BD672008BC2F2 /* LovePet.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = LovePet.pdf; sourceTree = "<group>"; };
 		09326EDE2A696CB40086D60F /* CatAndDogSmallView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CatAndDogSmallView.swift; sourceTree = "<group>"; };
 		093AC0C22A49765100F20678 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		093AC0DF2A4992F900F20678 /* Pflichtenheft Batch005 3.pages */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Pflichtenheft Batch005 3.pages"; sourceTree = "<group>"; };
@@ -152,6 +154,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		092BDCF52A8BD60D008BC2F2 /* Präsentation */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = "Präsentation";
+			path = "Präsentation";
+			sourceTree = "<group>";
+		};
 		0942881A2A45D93500EA2D67 = {
 			isa = PBXGroup;
 			children = (
@@ -184,6 +194,8 @@
 				093AC0C22A49765100F20678 /* GoogleService-Info.plist */,
 				094288632A45E13400EA2D67 /* FigmaSkizze */,
 				094288602A45DE9200EA2D67 /* Pflichtenheft */,
+				092BDCF52A8BD60D008BC2F2 /* Präsentation */,
+				092BDCF62A8BD672008BC2F2 /* LovePet.pdf */,
 				094288262A45D93500EA2D67 /* LovePetApp.swift */,
 				094288282A45D93500EA2D67 /* ContentView.swift */,
 				0942882A2A45D93600EA2D67 /* Assets.xcassets */,
@@ -422,6 +434,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				092BDCF72A8BD672008BC2F2 /* LovePet.pdf in Resources */,
 				094288622A45E12900EA2D67 /* LovePet.jpg in Resources */,
 				093AC0C32A49765100F20678 /* GoogleService-Info.plist in Resources */,
 				0942882E2A45D93600EA2D67 /* Preview Assets.xcassets in Resources */,
