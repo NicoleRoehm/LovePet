@@ -12,5 +12,5 @@ struct Cats: Codable, Hashable{
     
     var name: String
     
-    static var dummyCat = Cats(name: "Miezi")
+    
 }

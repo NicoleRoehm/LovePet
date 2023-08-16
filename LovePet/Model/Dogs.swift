@@ -11,6 +11,4 @@ struct Dogs: Codable, Hashable{
     
     
     var name: String
-    
-    static var dummyDog = Dogs(name: "Peanut")
 }
