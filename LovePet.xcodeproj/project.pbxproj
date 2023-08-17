@@ -41,9 +41,9 @@
 		0942886D2A45E45700EA2D67 /* FirebaseAuthService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0942886C2A45E45700EA2D67 /* FirebaseAuthService.swift */; };
 		095B05F42A613F4D00DE3D2F /* ProfilDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 095B05F32A613F4D00DE3D2F /* ProfilDetailView.swift */; };
 		095B05F62A61406400DE3D2F /* ProfilSmallView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 095B05F52A61406400DE3D2F /* ProfilSmallView.swift */; };
-		0961B1062A8CB95C00BB1BFE /* LovePet.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 0961B1052A8CB95C00BB1BFE /* LovePet.pdf */; };
 		0962CB852A70045A00311DED /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0962CB842A70045A00311DED /* SettingsView.swift */; };
 		0966BBF52A8635CA00FD57CE /* FavoritenView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0966BBF42A8635CA00FD57CE /* FavoritenView.swift */; };
+		0988464A2A8E0D9B00133BDA /* LovePet.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 098846492A8E0D9B00133BDA /* LovePet.pdf */; };
 		099D65C42A65355600FC68BA /* CatListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 099D65C32A65355600FC68BA /* CatListView.swift */; };
 		099D65C62A65412400FC68BA /* DogListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 099D65C52A65412400FC68BA /* DogListView.swift */; };
 		099D65CC2A6806F900FC68BA /* PetsDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 099D65CB2A6806F900FC68BA /* PetsDetailView.swift */; };
@@ -101,9 +101,9 @@
 		0942886C2A45E45700EA2D67 /* FirebaseAuthService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirebaseAuthService.swift; sourceTree = "<group>"; };
 		095B05F32A613F4D00DE3D2F /* ProfilDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfilDetailView.swift; sourceTree = "<group>"; };
 		095B05F52A61406400DE3D2F /* ProfilSmallView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfilSmallView.swift; sourceTree = "<group>"; };
-		0961B1052A8CB95C00BB1BFE /* LovePet.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = LovePet.pdf; sourceTree = "<group>"; };
 		0962CB842A70045A00311DED /* SettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
 		0966BBF42A8635CA00FD57CE /* FavoritenView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoritenView.swift; sourceTree = "<group>"; };
+		098846492A8E0D9B00133BDA /* LovePet.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; name = LovePet.pdf; path = ../../../../../Documents/ProjektApp/LovePet.pdf; sourceTree = "<group>"; };
 		099D65C32A65355600FC68BA /* CatListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CatListView.swift; sourceTree = "<group>"; };
 		099D65C52A65412400FC68BA /* DogListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DogListView.swift; sourceTree = "<group>"; };
 		099D65CB2A6806F900FC68BA /* PetsDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PetsDetailView.swift; sourceTree = "<group>"; };
@@ -157,7 +157,7 @@
 		092BDCF52A8BD60D008BC2F2 /* Präsentation */ = {
 			isa = PBXGroup;
 			children = (
-				0961B1052A8CB95C00BB1BFE /* LovePet.pdf */,
+				098846492A8E0D9B00133BDA /* LovePet.pdf */,
 			);
 			name = "Präsentation";
 			path = "Präsentation";
@@ -434,7 +434,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0961B1062A8CB95C00BB1BFE /* LovePet.pdf in Resources */,
+				0988464A2A8E0D9B00133BDA /* LovePet.pdf in Resources */,
 				094288622A45E12900EA2D67 /* LovePet.jpg in Resources */,
 				093AC0C32A49765100F20678 /* GoogleService-Info.plist in Resources */,
 				0942882E2A45D93600EA2D67 /* Preview Assets.xcassets in Resources */,

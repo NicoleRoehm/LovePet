@@ -18,12 +18,13 @@ struct CatListView: View {
                         VStack(alignment: .leading){
                             
                             Text(cat.name)
+                               
                         }
                     }
                 }
             }
         }.onAppear{catApiService.fetchCats()}
-            .colorMultiply(Color.yellow)
+            
             .bold()
             .cornerRadius(.leastNonzeroMagnitude)
             

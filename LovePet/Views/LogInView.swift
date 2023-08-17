@@ -18,7 +18,7 @@ struct LogInView: View {
     
     var body: some View {
         
-        Color.yellow.ignoresSafeArea()
+        Color.mint.ignoresSafeArea().opacity(0.2)
         
             .overlay(VStack{
             

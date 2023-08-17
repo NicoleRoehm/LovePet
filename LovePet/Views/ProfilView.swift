@@ -17,7 +17,7 @@ struct ProfilView: View {
     var body: some View {
         NavigationStack{
             ZStack{
-                Color.indigo.opacity(0.2)
+                Color.mint.opacity(0.2)
                 VStack{
                     HStack(alignment: .center){
                         Image(owner.image!)

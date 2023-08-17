@@ -21,7 +21,6 @@ struct DogListView: View {
                 }
             }
         }.onAppear{dogApiService.fetchDogs()}
-             .colorMultiply(Color.yellow.opacity(0.9))
              .bold()
              .cornerRadius(.leastNormalMagnitude)
     }
